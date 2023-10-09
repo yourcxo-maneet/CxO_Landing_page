@@ -66,3 +66,33 @@ export const cxoCardData = [
     description: "Let us handle your marketing and finance your ads for you!",
   },
 ];
+
+export const planCardData = [
+  {
+    title: "Wordpress",
+    price: "4500",
+    features: [
+      "Template Library - ThemeForest",
+      "Logo & Brand Book",
+      "Website Template & Pages",
+    ],
+  },
+  {
+    title: "Woocommerce",
+    price: "5500",
+    features: [
+      "Content Writing & SEO Setup",
+      "SMS & Email Integration",
+      "Support & Maintenance (30 days)",
+    ],
+  },
+  {
+    title: "Shopify",
+    price: "6500",
+    features: [
+      "Template Library - Shopify",
+      "Logo & Brand Book",
+      "Hosting on Shopify",
+    ],
+  },
+];

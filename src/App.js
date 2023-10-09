@@ -10,7 +10,7 @@ import socialMediaImg from "./assets/social-media.svg";
 import PrimaryButton from "./components/navBar/buttons/PrimaryButton";
 import CxoCard from "./components/navBar/cards/CxoCard";
 import Footer from "./components/footer/Footer";
-import { cxoCardData, subCardData } from "./data";
+import { cxoCardData, planCardData, subCardData } from "./data";
 import Crousel from "./components/crousel/Crousel";
 import Imagecarousel from "./components/testCrousel/ImageCarousel";
 function App() {
@@ -110,7 +110,7 @@ function App() {
             <PlanCard />
           </Grid>
         </Grid> */}
-        <Crousel data={item} Card={PlanCard} />
+        <Crousel data={planCardData} Card={PlanCard} />
       </Box>
       <Box className="section4">
         <Grid

@@ -3,14 +3,14 @@ import "./card.css";
 import icon from "../../../assets/goOrganic.svg";
 import CheckIcon from "@mui/icons-material/Check";
 
-const PlanCard = () => {
+const PlanCard = ({ data }) => {
   return (
-    <Box maxWidth="210px" className="subcard-wrapper">
+    <Box minWidth="210px" className="subcard-wrapper">
       <Box className="card-upper">
         <Box className="card-plan-upper-1">
           <Box className="card-upper-1_Planbox">
             <Typography sx={{ fontWeight: "bold" }} variant="body1">
-              Woocommerce Website
+              {data.title}
             </Typography>
           </Box>
         </Box>
@@ -23,7 +23,7 @@ const PlanCard = () => {
                 color: "rgba(238, 169, 31, 1)",
               }}
             >
-              $ 1000
+              $ {data.price}
             </Typography>
           </Box>
         </Box>
@@ -32,20 +32,23 @@ const PlanCard = () => {
         features
       </Typography>
       <Box className="">
-        <Box className="card-lower">
-          <Box className="card-lower_left">
-            <CheckIcon style={{ color: "green" }} />
+        {data.features.map((item) => (
+          <Box className="card-lower">
+            <Box className="card-lower_left">
+              <CheckIcon style={{ color: "green" }} />
+            </Box>
+            <Box className="card-lower_right">
+              {" "}
+              <Typography
+                variant="subtitle2"
+                sx={{ fontSize: "11px" }}
+                display="block"
+              >
+                {item}
+              </Typography>
+            </Box>
           </Box>
-          <Box className="card-lower_right">Basic GTM Strategy</Box>
-        </Box>
-        <Box className="card-lower">
-          <Box className="card-lower_left">
-            <CheckIcon style={{ color: "green" }} />
-          </Box>
-          <Box className="card-lower_right">
-            Digital Marketing Campaign Plan{" "}
-          </Box>
-        </Box>
+        ))}
       </Box>
       <Button className="sub-button">Buy Now</Button>
       <Typography
