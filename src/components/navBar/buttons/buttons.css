@@ -41,7 +41,6 @@
 }
 
 .primaryButton {
-  margin-top: 2rem !important;
   background-color: #eea81e !important;
   border-radius: 15px !important;
   color: #ffffff !important;
@@ -60,8 +59,6 @@
     margin-bottom: 2.5rem;
   }
   .primaryButton {
-    margin-top: 0.5rem !important;
-    margin-bottom: 3rem !important;
     background-color: #eea81e !important;
     border-radius: 15px !important;
     color: #ffffff !important;

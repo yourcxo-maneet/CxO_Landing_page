@@ -49,7 +49,6 @@ html {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding-right: 3rem;
 }
 
 .section2 {
@@ -261,7 +260,7 @@ html {
   }
   .footer {
     background: rgba(48, 46, 41, 1);
-  
+
     padding: 2rem 2rem;
   }
 

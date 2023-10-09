@@ -1,4 +1,4 @@
-.navbar-wrapper {  
+.navbar-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,5 +8,4 @@
   padding: 1rem;
 }
 .navbar-wrapper img {
-  margin-left: 5rem;
 }
