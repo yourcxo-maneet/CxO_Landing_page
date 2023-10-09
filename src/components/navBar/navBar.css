@@ -1,0 +1,12 @@
+.navbar-wrapper {  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #302e29;
+  height: 50px;
+  padding: 1rem;
+}
+.navbar-wrapper img {
+  margin-left: 5rem;
+}
