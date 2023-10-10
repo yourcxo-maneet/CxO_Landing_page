@@ -8,10 +8,13 @@ const NavBar = () => {
   return (
     <Box className="navbar-wrapper">
       <Box>
-      <img src={logo} />
+        <img src={logo} />
       </Box>
       <Box>
-        <PrimaryButton content={"visit website"}/>
+        <PrimaryButton
+          content={"visit website"}
+          url={"https://www.yourcxo.online/"}
+        />
       </Box>
     </Box>
   );

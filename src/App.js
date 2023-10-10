@@ -13,9 +13,30 @@ import Footer from "./components/footer/Footer";
 import { cxoCardData, planCardData, subCardData } from "./data";
 import Crousel from "./components/crousel/Crousel";
 import Imagecarousel from "./components/testCrousel/ImageCarousel";
+import CarouselSlick from "./components/carousel-slick/CarouselSlick";
+import { useEffect, useState } from "react";
 function App() {
   const item = [1, 2, 3, 4, 5, 6, 7, 87];
-  const isMobile = window.innerWidth < 768;
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Function to update isMobile state
+    function updateIsMobile() {
+      setIsMobile(window.innerWidth < 768);
+    }
+
+    // Initial call to set isMobile state when component mounts
+    updateIsMobile();
+
+    // Add event listener to update isMobile state when window is resized
+    window.addEventListener("resize", updateIsMobile);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", updateIsMobile);
+    };
+  }, []);
+
   return (
     <>
       <NavBar />
@@ -152,14 +173,11 @@ function App() {
           <Box></Box>
         </Box>
         <Box className="cxo-card">
-          {/* <Crousel data={cxoCardData} Card={CxoCard} isCxocard={true} /> */}
-          {isMobile
-            ? null
-            : cxoCardData.map((data) => (
-                <>
-                  <CxoCard data={data} />
-                </>
-              ))}
+          {isMobile ? null : (
+            <Box sx={{ width: "90%", margin: "0 auto" }}>
+              <CarouselSlick />
+            </Box>
+          )}
         </Box>
       </Box>
       {isMobile ? <Imagecarousel /> : null}
@@ -167,6 +185,9 @@ function App() {
       <Box className="footer">
         <Footer />
       </Box>
+      {/* <Box sx={{ width: "90%", margin: "0 auto", background: "#fefefe" }}>
+        <CarouselSlick />
+      </Box> */}
     </>
   );
 }

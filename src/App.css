@@ -118,15 +118,12 @@ html {
 }
 .section5 {
   background-color: #fffaf0;
-  padding: 8rem 1rem;
+  padding: 8rem 0;
 }
 .section5 .cxo-card {
-  width: 70%;
-  margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
   gap: 12rem;
-  padding: 2rem 8rem 0 15rem;
   margin-top: 5rem;
 }
 

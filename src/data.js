@@ -1,5 +1,9 @@
 import cfoImage from "./assets/cheerful-young-caucasian-businessman.svg";
 import chroImage from "./assets/smiley-businesswoman-posing-outdoors-with-arms-crossed-copy-space.svg";
+import ctoImage from "./assets/business-man-owner-company-office.svg";
+import cmoImage from "./assets/businesswoman-posing.svg";
+import csoImage from "./assets/proud-young-executive-ready-start.svg";
+import cdoImage from "./assets/two-colleagues-are-working-table-office-they-wear-black-clothes-there-is-young-guy-looking-camera-front.svg";
 import goOrganic from "./assets/goOrganic.svg";
 import GoScale from "./assets/GoScale.svg";
 import GoPro from "./assets/GoPro.svg";
@@ -61,8 +65,28 @@ export const cxoCardData = [
     description: "Let us handle your marketing and finance your ads for you!",
   },
   {
+    image: cdoImage,
+    title: "CDO",
+    description: "Let us handle your marketing and finance your ads for you!",
+  },
+  {
+    image: cmoImage,
+    title: "CMO",
+    description: "Let us handle your marketing and finance your ads for you!",
+  },
+  {
+    image: ctoImage,
+    title: "CTO",
+    description: "Let us handle your marketing and finance your ads for you!",
+  },
+  {
     image: chroImage,
     title: "CHRO",
+    description: "Let us handle your marketing and finance your ads for you!",
+  },
+  {
+    image: csoImage,
+    title: "CSO",
     description: "Let us handle your marketing and finance your ads for you!",
   },
 ];

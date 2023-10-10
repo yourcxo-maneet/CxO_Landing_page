@@ -50,7 +50,7 @@ const PlanCard = ({ data }) => {
           </Box>
         ))}
       </Box>
-      <Button className="sub-button">Buy Now</Button>
+      <Button className="sub-button">Meet Your CTO</Button>
       <Typography
         sx={{ marginTop: "2px" }}
         variant="caption"
