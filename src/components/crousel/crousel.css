@@ -31,14 +31,15 @@
 }
 
 .carousel-wrapper button {
-  background-color: #eea81e;
+  border-radius: 66px;
+  background: var(--White, #f6f6f5);
+  box-shadow: #eea81e 0px 0px 1px 3px !important;
 }
 .carousel-wrapper button:hover {
   background-color: #eea81e !important;
+  box-shadow: #eea81e 0px 0px 1px 3px !important;
 }
 .carousel-wrapper button:active {
   background-color: #eea81e !important;
-}
-
-.sc-gEvEer .eyoHU .rec .rec-item-wrapper {
+  box-shadow: #eea81e 0px 0px 1px 3px !important;
 }

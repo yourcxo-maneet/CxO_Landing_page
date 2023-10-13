@@ -1,0 +1,68 @@
+.solidbutton {
+  margin-top: 2.2rem;
+  width: 285px;
+  border-radius: 14.823px;
+  background: radial-gradient(
+      76.16% 76.16% at 31.97% 19.67%,
+      rgba(233, 190, 106, 0.7) 0%,
+      rgba(255, 255, 255, 0) 69.79%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #eea91f;
+  box-shadow: 2.37168px 22.53097px 36.76106px 0px rgba(0, 0, 0, 0.5),
+    -1.77876px -2.37168px 4.15044px 0px rgba(255, 255, 255, 0.15) inset;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.outlinedButton {
+  margin-top: 2.2rem;
+  width: 285px;
+  background: transparent;
+  border: 4px solid rgba(238, 169, 31, 1);
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.primaryButton {
+  background-color: #eea81e !important;
+  border-radius: 15px !important;
+  color: #ffffff !important;
+  padding: 10px 20px !important;
+}
+.primaryButton:hover {
+  background-color: #eea81e !important;
+}
+
+@media (max-width: 768px) {
+  .solidbutton {
+    margin-top: 1.5rem;
+  }
+  .outlinedButton {
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .primaryButton {
+    background-color: #eea81e !important;
+    border-radius: 15px !important;
+    color: #ffffff !important;
+    padding: 10px 20px !important;
+  }
+}

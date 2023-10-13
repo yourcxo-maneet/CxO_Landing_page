@@ -119,4 +119,84 @@ export const planCardData = [
       "Hosting on Shopify",
     ],
   },
+  {
+    title: "Shopify",
+    price: "6500",
+    features: [
+      "Template Library - Shopify",
+      "Logo & Brand Book",
+      "Hosting on Shopify",
+    ],
+  },
+  {
+    title: "Shopify",
+    price: "6500",
+    features: [
+      "Template Library - Shopify",
+      "Logo & Brand Book",
+      "Hosting on Shopify",
+    ],
+  },
+  {
+    title: "Shopify",
+    price: "6500",
+    features: [
+      "Template Library - Shopify",
+      "Logo & Brand Book",
+      "Hosting on Shopify",
+    ],
+  },
+];
+
+export const cmoPlanCardData = [
+  {
+    title: "Wordpress",
+    price: "4500",
+    features: [
+      "Template Library - ThemeForest",
+      "Logo & Brand Book",
+      "Website Template & Pages",
+      "SMS & Email Integration",
+    ],
+  },
+  {
+    title: "Software Development",
+    price: "1000",
+    features: [
+      "Template Library - ThemeForest",
+      "Logo & Brand Book",
+      "Website Template & Pages",
+      "SMS & Email Integration",
+    ],
+  },
+  {
+    title: "Martketplace",
+    price: "5500",
+    features: [
+      "Template Library - ThemeForest",
+      "Logo & Brand Book",
+      "Website Template & Pages",
+      "SMS & Email Integration",
+    ],
+  },
+  {
+    title: "GTM Strategy",
+    price: "600 -$1900",
+    features: [
+      "Template Library - ThemeForest",
+      "Logo & Brand Book",
+      "Website Template & Pages",
+      "SMS & Email Integration",
+    ],
+  },
+  {
+    title: "Shopify",
+    price: "6500",
+    features: [
+      "Template Library - ThemeForest",
+      "Logo & Brand Book",
+      "Website Template & Pages",
+      "SMS & Email Integration",
+    ],
+  },
 ];

@@ -4,8 +4,14 @@
   align-items: center;
 
   background-color: #302e29;
-  height: 50px;
   padding: 1rem;
 }
 .navbar-wrapper img {
+  width: 80px;
+}
+
+@media (max-width: 768px) {
+  .navbar-wrapper img {
+    width: 50px;
+  }
 }

@@ -2,8 +2,10 @@ import React, { useEffect } from "react";
 import Mycard from "./Mycard.js";
 import "./Imagecarousel.css";
 import { Avatar, Box, Button } from "@mui/material";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { cxoCardData } from "../../data.js";
-import CxoCard from "../navBar/cards/CxoCard.js";
+import CxoCard from "../cards/CxoCard.js";
 const Imagecarousel = () => {
   let box;
 
@@ -26,12 +28,23 @@ const Imagecarousel = () => {
   return (
     <>
       <div className="product-carousel">
-        <Box sx={{width:"100%",display:"flex",justifyContent:"flex-end",marginRight:"2rem"}}>
+        <Box
+          sx={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "flex-end",
+            marginRight: "2rem",
+          }}
+        >
           <Button onClick={btnpressprev}>
-            <Avatar>&lt;</Avatar>
+            <Avatar sx={{ backgroundColor: "#F5F5F6" }}>
+              <ArrowBackIcon sx={{ color: "#000000" }} />
+            </Avatar>
           </Button>
           <Button onClick={btnpressnext}>
-            <Avatar>&gt;</Avatar>
+            <Avatar sx={{ backgroundColor: "#F5F5F6" }}>
+              <ArrowForwardIcon sx={{ color: "#000000" }} />
+            </Avatar>
           </Button>
         </Box>
 
