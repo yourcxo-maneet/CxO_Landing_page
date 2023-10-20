@@ -4,9 +4,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 500px;
   width: 100%;
   margin: 0 auto;
+  padding: 3rem 0 1rem 0;
 }
 
 .seperator {
@@ -26,10 +26,9 @@
   box-shadow: inset 0 0 1px 0px rgb(252, 255, 94) !important;
 }
 
-.sc-gEvEer {
-  padding: 2rem 0 !important;
+.rec-arrow {
+  display: none !important;
 }
-
 .carousel-wrapper button {
   border-radius: 66px;
   background: var(--White, #f6f6f5);

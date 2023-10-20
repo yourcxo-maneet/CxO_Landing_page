@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import "./slickCarousel.css";
-import { cxoCardData } from "../../data";
+import { CxoCardData } from "../../data.js";
 import CxoCard from "../cards/CxoCard";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
@@ -10,7 +10,7 @@ function CarouselSlick() {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
     prevArrow: (
@@ -51,8 +51,8 @@ function CarouselSlick() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToShow: 3,
+          slidesToScroll: 3,
           infinite: true,
           dots: true,
         },
@@ -60,7 +60,7 @@ function CarouselSlick() {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
           slidesToScroll: 1,
           initialSlide: 1,
         },
@@ -78,7 +78,7 @@ function CarouselSlick() {
   return (
     <div>
       <Slider {...settings}>
-        {cxoCardData.map((data) => (
+        {CxoCardData.map((data) => (
           <div>
             <CxoCard data={data} />
           </div>

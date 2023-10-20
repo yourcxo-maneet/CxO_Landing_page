@@ -7,11 +7,11 @@
   padding: 1rem;
 }
 .navbar-wrapper img {
-  width: 80px;
+  width: 200px;
 }
 
 @media (max-width: 768px) {
   .navbar-wrapper img {
-    width: 50px;
+    width: 150px;
   }
 }

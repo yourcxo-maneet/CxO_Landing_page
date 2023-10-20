@@ -1,65 +1,91 @@
-import React, { useEffect } from "react";
-import Mycard from "./Mycard.js";
+import React from "react";
+import Slider from "react-slick";
 import "./Imagecarousel.css";
-import { Avatar, Box, Button } from "@mui/material";
+import { CxoCardData, cxoCardData } from "../../data";
+import CxoCard from "../cards/CxoCard";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import { cxoCardData } from "../../data.js";
-import CxoCard from "../cards/CxoCard.js";
-const Imagecarousel = () => {
-  let box;
-
-  useEffect(() => {
-    box = document.querySelector(".product-container");
-    console.log(box);
-  }, []);
-
-  const btnpressprev = () => {
-    let width = box.clientWidth;
-    box.scrollLeft = box.scrollLeft - width;
-    console.log(width);
+function ImageCarousel() {
+  var settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    prevArrow: (
+      <ArrowBackIcon
+        className="slick-arrow"
+        sx={{
+          color: "#000000",
+          backgroundColor: "#F6F6F6",
+          width: "48px",
+          height: "48px",
+          borderRadius: "100px",
+          padding: "0.2rem",
+          ":hover": {
+            color: "#000000",
+            backgroundColor: "#F6F6F6",
+          },
+        }}
+      />
+    ),
+    nextArrow: (
+      <ArrowForwardIcon
+        className="slick-arrow"
+        sx={{
+          color: "#000000",
+          backgroundColor: "#F6F6F6",
+          width: "48px",
+          height: "48px",
+          borderRadius: "100px",
+          padding: "0.2rem",
+          ":hover": {
+            color: "#000000",
+            backgroundColor: "#F6F6F6",
+          },
+        }}
+      />
+    ),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
-  const btnpressnext = () => {
-    let width = box.clientWidth;
-    box.scrollLeft = box.scrollLeft + width;
-    console.log(width);
-  };
   return (
-    <>
-      <div className="product-carousel">
-        <Box
-          sx={{
-            width: "100%",
-            display: "flex",
-            justifyContent: "flex-end",
-            marginRight: "2rem",
-          }}
-        >
-          <Button onClick={btnpressprev}>
-            <Avatar sx={{ backgroundColor: "#F5F5F6" }}>
-              <ArrowBackIcon sx={{ color: "#000000" }} />
-            </Avatar>
-          </Button>
-          <Button onClick={btnpressnext}>
-            <Avatar sx={{ backgroundColor: "#F5F5F6" }}>
-              <ArrowForwardIcon sx={{ color: "#000000" }} />
-            </Avatar>
-          </Button>
-        </Box>
-
-        <div className="product-container">
-          {cxoCardData.map((data) => (
-            <>
-              <CxoCard data={data} />
-              <CxoCard data={data} />
-              <CxoCard data={data} />
-            </>
-          ))}
-        </div>
-      </div>
-    </>
+    <div>
+      <Slider {...settings}>
+        {CxoCardData.map((data) => (
+          <div>
+            <CxoCard data={data} />
+          </div>
+        ))}
+      </Slider>
+    </div>
   );
-};
+}
 
-export default Imagecarousel;
+export default ImageCarousel;

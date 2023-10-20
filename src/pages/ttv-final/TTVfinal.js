@@ -1,4 +1,11 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
+import Dialog from "@mui/material/Dialog";
+import DialogActions from "@mui/material/DialogActions";
+import DialogContent from "@mui/material/DialogContent";
+import DialogContentText from "@mui/material/DialogContentText";
+import DialogTitle from "@mui/material/DialogTitle";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTheme } from "@mui/material/styles";
 import "../../pages/pages.css";
 import NavBar from "../../components/navBar/NavBar";
 import heroImage from "../../assets/heroImage.svg";
@@ -10,7 +17,12 @@ import socialMediaImg from "../../assets/social-media.svg";
 import PrimaryButton from "../../components/buttons/PrimaryButton";
 import CxoCard from "../../components/cards/CxoCard";
 import Footer from "../../components/footer/Footer";
-import { cxoCardData, planCardData, subCardData } from "../../data";
+import {
+  cmoPlanCardData,
+  cxoCardData,
+  planCardData,
+  subCardData,
+} from "../../data";
 import Crousel from "../../components/crousel/Crousel";
 import Imagecarousel from "../../components/testCrousel/ImageCarousel";
 import CarouselSlick from "../../components/carousel-slick/CarouselSlick";
@@ -18,6 +30,7 @@ import { useEffect, useState } from "react";
 function TTVfinal() {
   const item = [1, 2, 3, 4, 5, 6, 7, 87];
   const [isMobile, setIsMobile] = useState(false);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     // Function to update isMobile state
@@ -36,7 +49,19 @@ function TTVfinal() {
       window.removeEventListener("resize", updateIsMobile);
     };
   }, []);
+  const theme = useTheme();
+  const fullScreen = useMediaQuery(theme.breakpoints.down("lg"));
 
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <>
       <NavBar />
@@ -49,30 +74,47 @@ function TTVfinal() {
         >
           <Grid className="section1-left" item xs={12} md={6}>
             <Box sx={{ maxWidth: "100%", paddingLeft: "1rem" }}>
-              <Typography className="heading">Are you looking for </Typography>
-              <span className="special-text">Funding ?</span>{" "}
+              <Typography className="heading">
+                Are you looking for{" "}
+                <span className="special-text"> Ad Funding ?</span>{" "}
+              </Typography>
+
               <p className="sub-text">
-                Explore our range of subscription plans, designed to meet every
-                need and apply for Your CMO’s Ad fund
+                Unlock the <span className="bold-text">full potential</span> of
+                your <span className="bold-text"> marketing strategy </span>with
+                <span className="bold-text"> our subscription services</span>,
+                tailored to elevate your brand's reach and impact. Leverage Your
+                CMO ad funding to elevate your brand
               </p>
             </Box>
             <Box className="section1-buttons">
               <SolidButton
-                content={"Apply for Ad Fund"}
+                content={"Get Your Ads Funded"}
                 widget={
                   <iframe
                     frameborder="0"
-                    style={{ height: "700px", width: "100%", border: "none" }}
+                    style={{
+                      height: "760px",
+                      width: isMobile ? "100%" : "500px",
+                      border: "none",
+                    }}
                     src="https://forms.zohopublic.in/yourcxoonline/form/AdFundApplication/formperma/NA8G68NnhgfIRQZ4GHM7gf4p3d3s1BmxBB7gN4z7qqE"
                   ></iframe>
                 }
               />
-              <OutlinedButton content={"Meet Your CMO"} />
             </Box>
           </Grid>
           <Grid className="section1-right" item xs={12} md={6}>
             <Box className="image-wrapper">
-              <img src={heroImage} />
+              <iframe
+                width="100%"
+                height="555px"
+                src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourcmo"
+                frameborder="0"
+                allowfullscreen=""
+              >
+                {" "}
+              </iframe>
             </Box>
           </Grid>
         </Grid>
@@ -80,7 +122,7 @@ function TTVfinal() {
       <Box className="section2">
         <p className="heading">
           Your CMO’s Exclusive <br />
-          Subscriptions
+          Bespoke Subscriptions
         </p>
         <Grid
           maxWidth={"80%"}
@@ -95,25 +137,60 @@ function TTVfinal() {
               </Grid>
             );
           })}
+          <Box
+            sx={{
+              marginTop: { md: "3rem", xs: "0px" },
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          ></Box>
           <Typography
-            sx={{ marginTop: "2rem", width: "100%", textAlign: "right" }}
+            sx={{
+              marginTop: "2rem",
+              width: "100%",
+              textAlign: { md: "right", xs: "center" },
+              fontSize: { xs: "0.6rem", md: "0.8rem" },
+              marginTop: { xs: "1rem", md: "24px" },
+            }}
             variant="caption"
             display="block"
             gutterBottom
           >
             *Funding applicable to Go Scale & Go Pro Subscriptions only
           </Typography>
-          <Typography className="sub-heading">
-            Not ready to dive into a full subscription? No worries!
-          </Typography>
-          <Typography className="caption">
-            Mix and match to create a custom plan that suits your needs and
-            <br />
-            budget. Get in touch today to supercharge your marketing efforts!
-          </Typography>
+          <Box className="subCard-button-wrapper">
+            <button className="subCard-button" onClick={scrollToTop}>
+              Meet Your CMO Today
+            </button>
+            <button
+              className="subCard-buttonOutlined"
+              onClick={handleClickOpen}
+            >
+              Apply For Your CMO Ad Funding
+            </button>
+          </Box>
         </Grid>
       </Box>
+
       <Box className="section3">
+        <Box className="section-3-top">
+          <Box sx={{ flex: 3 }}>
+            <Typography className="sub-heading">
+              Do you want to start small ? No worries!
+            </Typography>
+            <Typography className="caption">
+              Customize a plan that perfectly aligns with your unique
+              requirements and budget. Connect with us today to turbocharge your
+              marketing endeavors.
+            </Typography>
+          </Box>
+          <Box>
+            <button className="subCard-button" onClick={scrollToTop}>
+              Meet Your CMO Today
+            </button>
+          </Box>
+        </Box>
         {/* <Grid
           maxWidth={"80%"}
           container
@@ -138,7 +215,7 @@ function TTVfinal() {
             <PlanCard />
           </Grid>
         </Grid> */}
-        <Crousel data={planCardData} Card={PlanCard} />
+        <Crousel data={cmoPlanCardData} Card={PlanCard} />
       </Box>
       <Box className="section4">
         <Grid
@@ -156,15 +233,36 @@ function TTVfinal() {
               chance to launch your
               <br /> paid media ads today.
             </Typography>
-            <Typography
-              variant="h5"
-              gutterBottom
-              className="section4-left-subheading"
-            >
+            <Typography gutterBottom className="section4-left-subheading">
               Let us handle your marketing and
               <br /> finance your ads for you!
             </Typography>
-            <PrimaryButton content={"Apply for Ad Fund"} />
+            <button className="subCard-button" onClick={handleClickOpen}>
+              Apply for Your CMO Ad Funding
+            </button>
+            <Dialog
+              fullScreen={fullScreen}
+              open={open}
+              onClose={handleClose}
+              aria-labelledby="responsive-dialog-title"
+            >
+              <DialogTitle id="responsive-dialog-title"></DialogTitle>
+              <DialogContent>
+                <DialogContentText>
+                  {" "}
+                  <iframe
+                    frameborder="0"
+                    style={{ height: "760px", width: "500px", border: "none" }}
+                    src="https://forms.zohopublic.in/yourcxoonline/form/AdFundApplication/formperma/NA8G68NnhgfIRQZ4GHM7gf4p3d3s1BmxBB7gN4z7qqE"
+                  ></iframe>
+                </DialogContentText>
+              </DialogContent>
+              <DialogActions>
+                <Button autoFocus onClick={handleClose}>
+                  Close
+                </Button>
+              </DialogActions>
+            </Dialog>
           </Grid>
           <Grid className="section4-right" item sm={12} md={6}>
             {" "}
@@ -175,9 +273,17 @@ function TTVfinal() {
       <Box className="section5">
         <Box sx={{ margin: "0 auto", width: "80%" }}>
           <Typography variant="h4" gutterBottom sx={{ fontWeight: "bold" }}>
-            Meet Our CxO's
+            Meet Your CxO's
           </Typography>
-          <Box></Box>
+          <Typography
+            className="caption"
+            sx={{ color: "#6a6965", textAlign: { xs: "center", md: "left" } }}
+          >
+            Meet Our Expert CxOs, seasoned professionals committed to driving
+            your business growth and success. With a rich blend of industry
+            knowledge and cutting-edge expertise, our team is dedicated to
+            delivering tailored solutions for your unique business needs.
+          </Typography>
         </Box>
         <Box className="cxo-card">
           {isMobile ? null : (
@@ -186,8 +292,8 @@ function TTVfinal() {
             </Box>
           )}
         </Box>
+        {isMobile ? <Imagecarousel /> : null}
       </Box>
-      {isMobile ? <Imagecarousel /> : null}
 
       <Box className="footer">
         <Footer />

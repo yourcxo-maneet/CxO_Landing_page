@@ -1,15 +1,32 @@
 import { Box, Button, Typography } from "@mui/material";
-import React from "react";
+import Dialog from "@mui/material/Dialog";
+import DialogActions from "@mui/material/DialogActions";
+import DialogContent from "@mui/material/DialogContent";
+import DialogContentText from "@mui/material/DialogContentText";
+import DialogTitle from "@mui/material/DialogTitle";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTheme } from "@mui/material/styles";
+import React, { useState } from "react";
 import "./card.css";
 
 const CxoCard = ({ data }) => {
+  const [open, setOpen] = useState(false);
+  const theme = useTheme();
+  const fullScreen = useMediaQuery(theme.breakpoints.down("lg"));
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
   return (
-    
     <Box className="cxoCard-wrapper">
       <Box
         className="cxoCard-image"
         style={{
-          backgroundImage: `url(${data.image})`, 
+          backgroundImage: `url(${data.image})`,
         }}
       ></Box>
       <Box className="cxoCard-content">
@@ -17,17 +34,31 @@ const CxoCard = ({ data }) => {
           Your {data.title}
         </Typography>
         <Typography
-        className="cxoCard-content-subheading"
+          className="cxoCard-content-subheading"
           variant="body1"
           gutterBottom
         >
-          Let us handle your
-   marketing and finance your 
-          ads for you!
+          {data.description}
         </Typography>
-        <Button variant="outlined" className="button">
+        <Button variant="outlined" className="button" onClick={handleClickOpen}>
           Meet Your {data.title}
         </Button>
+        <Dialog
+          fullScreen={fullScreen}
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="responsive-dialog-title"
+        >
+          <DialogTitle id="responsive-dialog-title"></DialogTitle>
+          <DialogContent>
+            <DialogContentText>{data.widget}</DialogContentText>
+          </DialogContent>
+          <DialogActions>
+            <Button autoFocus onClick={handleClose}>
+              Close
+            </Button>
+          </DialogActions>
+        </Dialog>
       </Box>
     </Box>
   );

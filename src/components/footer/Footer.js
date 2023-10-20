@@ -1,11 +1,13 @@
 import { Box, Divider, Typography } from "@mui/material";
 import React from "react";
 import logo from "../../assets/cxoLogoFooter.svg";
-import InstagramLogo from "../../assets/InstagramLogo.svg";
-import LinkedinLogo from "../../assets/LinkedinLogo.svg";
-import FacebookLogo from "../../assets/FacebookLogo.svg";
-import PinterestLogo from "../../assets/PinterestLogo.svg";
+import footerlogo from "../../assets/footerlogo.svg";
+import LinkedinLogo from "../../assets/linkedin.svg";
+import FacebookLogo from "../../assets/facebook.svg";
+import Upwork from "../../assets/upwork.svg";
+import Insta from "../../assets/instagram.svg";
 import HeadsetIcon from "@mui/icons-material/Headset";
+import LanguageIcon from "@mui/icons-material/Language";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import EmailIcon from "@mui/icons-material/Email";
 import "./footer.css";
@@ -20,7 +22,7 @@ const Footer = () => {
           </Box>
           <Box className="footer-upper-left-details">
             <HeadsetIcon />
-            <Typography>+1-640-600-0040</Typography>
+            <Typography>+1 (437) 799-9039</Typography>
           </Box>
           <Box className="footer-upper-left-details">
             <EmailIcon />
@@ -29,25 +31,45 @@ const Footer = () => {
           <Box className="footer-upper-left-details">
             <LocationOnIcon />
             <Typography>
-              India (Noida), Canada (Toronto), UAE (Dubai)
+              Canada (Toronto), India (Noida), Middle East (Dubai)
             </Typography>
+          </Box>
+          <Box className="footer-upper-left-details">
+            <LanguageIcon />
+            <a href="https://www.yourcxo.online/" style={{ color: "#ffffff" }}>
+              <Typography>www.yourcxo.online</Typography>
+            </a>
           </Box>
         </Box>
 
         <Box className="footer-upper-right">
-          <Typography gutterBottom>connect</Typography>
+          <Typography gutterBottom>Engage with us </Typography>
           <Box sx={{ display: "flex", gap: "1rem" }}>
             <Box>
-              <img src={FacebookLogo} />
+              <a href="https://www.facebook.com/yourcxoonline">
+                <img src={FacebookLogo} />
+              </a>
             </Box>
             <Box>
-              <img src={PinterestLogo} />
+              <a href="https://www.upwork.com/agencies/1309068026062622720/">
+                <img src={Upwork} />
+              </a>
             </Box>
             <Box>
-              <img src={InstagramLogo} />
+              <a
+                href="https://www.instagram.com/yourcxoonline/"
+                target="_blank"
+              >
+                <img src={Insta} />
+              </a>
             </Box>
             <Box>
-              <img src={LinkedinLogo} />
+              <a
+                href="https://www.linkedin.com/company/yourcxoonline/mycompany/"
+                target="_blank"
+              >
+                <img src={LinkedinLogo} />
+              </a>
             </Box>
           </Box>
         </Box>
@@ -55,7 +77,7 @@ const Footer = () => {
       <Box></Box>
       <hr></hr>
       <Typography>
-        © 2021 Your CxO Online Solutions. All Rights Reserved.
+        © 2023 Your CxO Online Solutions. All Rights Reserved.
       </Typography>
       <Box></Box>
     </Box>

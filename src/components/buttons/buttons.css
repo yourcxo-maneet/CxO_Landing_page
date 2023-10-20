@@ -1,6 +1,6 @@
 .solidbutton {
   margin-top: 2.2rem;
-  width: 285px;
+  width: 420px;
   border-radius: 14.823px;
   background: radial-gradient(
       76.16% 76.16% at 31.97% 19.67%,
@@ -11,7 +11,7 @@
     #eea91f;
   box-shadow: 2.37168px 22.53097px 36.76106px 0px rgba(0, 0, 0, 0.5),
     -1.77876px -2.37168px 4.15044px 0px rgba(255, 255, 255, 0.15) inset;
-  color: #ffffff;
+  color: #000000;
   border: none;
   border-radius: 10px;
   padding: 10px 20px;
@@ -54,6 +54,8 @@
 @media (max-width: 768px) {
   .solidbutton {
     margin-top: 1.5rem;
+    width: 350px;
+    font-size: 1rem;
   }
   .outlinedButton {
     margin-top: 1.5rem;

@@ -12,18 +12,30 @@
 
 .slick-slider .slick-list .slick-track {
   display: flex !important;
-  gap: 125px !important;
-  padding-top: 2rem;
+  gap: 80px !important;
+  padding: 2rem 0px;
   align-items: center;
 }
 
 .slick-slider .slick-prev {
+  display: none !important;
   background-color: #f5f5f6 !important;
   top: -20%;
   left: 80%;
 }
 .slick-slider .slick-next {
+  display: none !important;
   background-color: #f5f5f6 !important;
   top: -20%;
   left: 90%;
+}
+
+@media (max-width: 768px) {
+  .slick-dots {
+    padding: 3.5rem 0 !important;
+  }
+  .slick-slider .slick-list .slick-track {
+    margin-bottom: 2rem;
+    padding: 4rem 0px;
+  }
 }

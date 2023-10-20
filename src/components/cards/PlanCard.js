@@ -1,9 +1,28 @@
 import { Box, Button, Divider, Typography } from "@mui/material";
+import Dialog from "@mui/material/Dialog";
+import DialogActions from "@mui/material/DialogActions";
+import DialogContent from "@mui/material/DialogContent";
+import DialogContentText from "@mui/material/DialogContentText";
+import DialogTitle from "@mui/material/DialogTitle";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTheme } from "@mui/material/styles";
 import "./card.css";
 import icon from "../../assets/goOrganic.svg";
 import CheckIcon from "@mui/icons-material/Check";
+import { useState } from "react";
 
 const PlanCard = ({ data }) => {
+  const [open, setOpen] = useState(false);
+  const theme = useTheme();
+  const fullScreen = useMediaQuery(theme.breakpoints.down("lg"));
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
   return (
     <Box minWidth="210px" className="subcard-wrapper">
       <Box className="card-upper">
@@ -28,8 +47,12 @@ const PlanCard = ({ data }) => {
           </Box>
         </Box>
       </Box>
-      <Typography variant="subtitle2" display="block">
-        features
+      <Typography
+        sx={{ fontWeight: "bold" }}
+        variant="subtitle2"
+        display="block"
+      >
+        Features
       </Typography>
       <Box className="">
         {data.features.map((item) => (
@@ -50,7 +73,6 @@ const PlanCard = ({ data }) => {
           </Box>
         ))}
       </Box>
-      <Button className="sub-button">Meet Your CTO</Button>
       <Typography
         sx={{ marginTop: "2px" }}
         variant="caption"

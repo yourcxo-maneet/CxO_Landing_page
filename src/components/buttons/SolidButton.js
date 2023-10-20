@@ -12,7 +12,7 @@ import { useState } from "react";
 const SolidButton = ({ content, widget }) => {
   const [open, setOpen] = useState(false);
   const theme = useTheme();
-  const fullScreen = useMediaQuery(theme.breakpoints.down("sm"));
+  const fullScreen = useMediaQuery(theme.breakpoints.down("lg"));
 
   const handleClickOpen = () => {
     setOpen(true);

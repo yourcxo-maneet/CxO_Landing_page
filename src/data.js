@@ -1,9 +1,9 @@
-import cfoImage from "./assets/cheerful-young-caucasian-businessman.svg";
-import chroImage from "./assets/smiley-businesswoman-posing-outdoors-with-arms-crossed-copy-space.svg";
-import ctoImage from "./assets/business-man-owner-company-office.svg";
-import cmoImage from "./assets/businesswoman-posing.svg";
-import csoImage from "./assets/proud-young-executive-ready-start.svg";
-import cdoImage from "./assets/two-colleagues-are-working-table-office-they-wear-black-clothes-there-is-young-guy-looking-camera-front.svg";
+import cfoImage from "./assets/Karan.svg";
+import chroImage from "./assets/Vineeta.svg";
+import ctoImage from "./assets/DS.svg";
+import cmoImage from "./assets/Faith.svg";
+import csoImage from "./assets/Sapnika.svg";
+import cooImage from "./assets/Faith.svg";
 import goOrganic from "./assets/goOrganic.svg";
 import GoScale from "./assets/GoScale.svg";
 import GoPro from "./assets/GoPro.svg";
@@ -29,9 +29,9 @@ export const subCardData = [
     heading: "Go Scale",
     min: "6",
     price: "900",
+    addOn: "+ Everything on Go Organic",
     perPrice: "500",
     services: [
-      "Go organic +",
       "Social Media Paid Ads",
       "Acquisition Strategy ",
       "Sales Lifecycle",
@@ -45,9 +45,9 @@ export const subCardData = [
     heading: "Go Pro",
     min: "6",
     price: "1500",
-    perPrice: "5700",
+    addOn: "+ Everything on Go Scale",
+    perPrice: "700",
     services: [
-      "Go Scale +",
       "Engagement Strategy",
       "Google Ads & SEO",
       "Influencer Partnership",
@@ -57,48 +57,212 @@ export const subCardData = [
     ],
   },
 ];
+export const cmoSubCardData = [
+  {
+    image: goOrganic,
+    heading: "Go Organic",
+    min: "3",
+    price: "600",
+    perPrice: "300",
+    services: [
+      "Basic GTM Strategy",
+      "Digital Marketing Campaign Plan ",
+      "Bespoke Artwork & Content ",
+      "Content Strategy",
+      "Digital Marketing Kit",
+      "Analytics & Reports",
+      "Brand Book",
+    ],
+  },
+  {
+    image: GoScale,
+    heading: "Go Scale",
+    min: "6",
+    price: "900",
+    perPrice: "500",
+    addOn: "+ Everything on Go Organic",
+    services: [
+      "Social Media Paid Ads",
+      "Acquisition Strategy ",
+      "Sales Lifecycle",
+      "Marketing Automation Setup",
+      "SEO Audit",
+      "Spot Hiring",
+    ],
+  },
+  {
+    image: GoPro,
+    heading: "Go Pro",
+    min: "6",
+    price: "1500",
+    perPrice: "700",
+    addOn: "+ Everything on Go Scale",
+    services: [
+      "Engagement Strategy",
+      "Google Ads & SEO",
+      "Influencer Partnership",
+      "Brand Consulting",
+      "Lead (MQL) Management",
+      "Virtual Assit & Spot Hiring",
+    ],
+  },
+];
+export const cfoSubCardData = [
+  {
+    image: goOrganic,
+    heading: "Starter Go",
+    min: "3",
+    price: "950",
+    services: [
+      "Bookkeeping(Bi-weekly for business having turnover less than USD 500k)",
+      "Financial Consultancy (Upto 4 hours per month)",
+      "Monthly Reporting (Balance Sheet, P&L  Account & Cash Flow Statements)",
+      "Book-keeping Platform Setup and Automation (excluding Integrations)",
+      "Live P&L and Business KPI Dashboard",
+    ],
+  },
+  {
+    image: GoScale,
+    heading: "Go Scale",
+    min: "3",
+    price: "1800",
+    addOn: "+ Starter Go",
+    services: [
+      "Bookkeeping (Weekly) 1 Shadow Expert Turnover less than 1 Million",
+      "Financial Consultancy (Upto 8 hours per month)",
+      "Preparation of FInancials on Monthly Basis",
+      "Tax Consultancy (US, India, UK and Middle East)",
+      "Zoho and Slack Support Annual Budgeting",
+    ],
+  },
+  {
+    image: GoPro,
+    heading: "Go Pro",
+    min: "6",
+    price: "2700",
+    addOn: "+ Go Scale",
+    services: [
+      "Bookkeeping (Daily) 1 Freelancer & 1 Shadow Expert Business less than USD 5 Million",
+      "Financial Consultancy (Upto 20 hours per month)",
+      "Preparation of FInancials (Monthly Basis)",
+      "Tax Consultancy (US, India, UK and Middle East)",
+      "Zoho and Slack Support",
+      "AR, AP, Cash Management, Process Design, Automation workflow etc",
+    ],
+  },
+];
 
-export const cxoCardData = [
+export const CxoCardData = [
   {
     image: cfoImage,
     title: "CFO",
-    description: "Let us handle your marketing and finance your ads for you!",
+    widget: (
+      <iframe
+        width="100%"
+        height="750px"
+        src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourcfo"
+        frameborder="0"
+        allowfullscreen=""
+      >
+        {" "}
+      </iframe>
+    ),
+    description:
+      "Secure your financial future with our expert fiscal management.",
   },
   {
-    image: cdoImage,
-    title: "CDO",
-    description: "Let us handle your marketing and finance your ads for you!",
+    image: cooImage,
+    title: "COO",
+    widget: (
+      <iframe
+        width="100%"
+        height="750px"
+        src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourcfo"
+        frameborder="0"
+        allowfullscreen=""
+      >
+        {" "}
+      </iframe>
+    ),
+    description: "Let us handle your project management & operations for you!",
   },
   {
     image: cmoImage,
     title: "CMO",
+    widget: (
+      <iframe
+        width="100%"
+        height="750px"
+        src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourcmo"
+        frameborder="0"
+        allowfullscreen=""
+      >
+        {" "}
+      </iframe>
+    ),
     description: "Let us handle your marketing and finance your ads for you!",
   },
   {
     image: ctoImage,
     title: "CTO",
-    description: "Let us handle your marketing and finance your ads for you!",
+    widget: (
+      <iframe
+        width="100%"
+        height="750px"
+        src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourcto"
+        frameborder="0"
+        allowfullscreen=""
+      >
+        {" "}
+      </iframe>
+    ),
+    description:
+      "Innovate fearlessly with our cutting-edge technological solutions.",
   },
   {
     image: chroImage,
     title: "CHRO",
+    widget: (
+      <iframe
+        width="100%"
+        height="750px"
+        src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourchro"
+        frameborder="0"
+        allowfullscreen=""
+      >
+        {" "}
+      </iframe>
+    ),
     description: "Let us handle your marketing and finance your ads for you!",
   },
   {
     image: csoImage,
     title: "CSO",
-    description: "Let us handle your marketing and finance your ads for you!",
+    widget: (
+      <iframe
+        width="100%"
+        height="750px"
+        src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourcso"
+        frameborder="0"
+        allowfullscreen=""
+      >
+        {" "}
+      </iframe>
+    ),
+    description:
+      "Navigate your business journey with our insightful strategy guidance.",
   },
 ];
 
 export const planCardData = [
   {
-    title: "Wordpress",
+    title: "Build a Wordpress Website",
     price: "4500",
     features: [
       "Template Library - ThemeForest",
       "Logo & Brand Book",
       "Website Template & Pages",
+      "Chatbot Integration",
     ],
   },
   {
@@ -150,27 +314,89 @@ export const planCardData = [
 
 export const cmoPlanCardData = [
   {
-    title: "Wordpress",
+    title: "Build a Wordpress Website",
     price: "4500",
     features: [
       "Template Library - ThemeForest",
       "Logo & Brand Book",
       "Website Template & Pages",
-      "SMS & Email Integration",
+      "Chatbot Integration",
     ],
   },
   {
     title: "Software Development",
     price: "1000",
     features: [
+      "Custom UI & UX",
+      "Logo & Brand Book",
+      "Website Content & Pages",
+      "Chatbot Integration",
+    ],
+  },
+  {
+    title: "Build a Marketplace",
+    price: "5500",
+    features: [
+      "Amazon/Flipkart/Alibaba/Walmart Setup (Any 1)",
+      "Logo & Brand Book",
+      "Catalogue Management",
+      "Chatbot Integration",
+    ],
+  },
+  {
+    title: "Build an E-commerce store",
+    price: "5500",
+    features: [
       "Template Library - ThemeForest",
+      "Logo & Brand Book",
+      "Website Template & Pages",
+      "Chatbot Integration",
+    ],
+  },
+  {
+    title: "Develop a GTM Strategy",
+    price: "600- $1900",
+    features: [
+      "Market Research",
+      "Target Market Evaluation",
+      "Communication Strategy",
+      "Distribution Strategy",
+    ],
+  },
+  {
+    title: "Create a Shopify Store",
+    price: "6500",
+    features: [
+      "Template Library - Shopify",
+      "Logo & Brand Book",
+      "Website Template & Pages",
+      "Chatbot Integration",
+    ],
+  },
+];
+export const cfoPlanCardData = [
+  {
+    title: "Software Development",
+    price: "1000",
+    features: [
+      "Custom UI & UX",
       "Logo & Brand Book",
       "Website Template & Pages",
       "SMS & Email Integration",
     ],
   },
   {
-    title: "Martketplace",
+    title: "Martket Ready",
+    price: "2100",
+    features: [
+      "Business Plan",
+      "Logo & Brand Book",
+      "GTM Strategy",
+      "Pitch Deck",
+    ],
+  },
+  {
+    title: "Woocommerce",
     price: "5500",
     features: [
       "Template Library - ThemeForest",
@@ -180,8 +406,18 @@ export const cmoPlanCardData = [
     ],
   },
   {
-    title: "GTM Strategy",
-    price: "600 -$1900",
+    title: "Roadmap",
+    price: "2100",
+    features: [
+      "Revenue Model",
+      "Market Research",
+      "Cash Flow Plan",
+      "Multi Year Forecast (3/5)",
+    ],
+  },
+  {
+    title: "Shopify Website",
+    price: "1000",
     features: [
       "Template Library - ThemeForest",
       "Logo & Brand Book",
@@ -190,8 +426,8 @@ export const cmoPlanCardData = [
     ],
   },
   {
-    title: "Shopify",
-    price: "6500",
+    title: "Ideation",
+    price: "1400",
     features: [
       "Template Library - ThemeForest",
       "Logo & Brand Book",
