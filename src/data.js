@@ -1,9 +1,9 @@
-import cfoImage from "./assets/Karan.svg";
-import chroImage from "./assets/Vineeta.svg";
-import ctoImage from "./assets/DS.svg";
+import cfoImage from "./assets/newCfo.svg";
+import chroImage from "./assets/newChro.svg";
+import ctoImage from "./assets/newCto.svg";
 import cmoImage from "./assets/Faith.svg";
-import csoImage from "./assets/Sapnika.svg";
-import cooImage from "./assets/Faith.svg";
+import csoImage from "./assets/newCso.svg";
+import cooImage from "./assets/newCoo.svg";
 import goOrganic from "./assets/goOrganic.svg";
 import GoScale from "./assets/GoScale.svg";
 import GoPro from "./assets/GoPro.svg";
@@ -29,7 +29,7 @@ export const subCardData = [
     heading: "Go Scale",
     min: "6",
     price: "900",
-    addOn: "+ Everything on Go Organic",
+    addOn: "Everything on Go Organic +",
     perPrice: "500",
     services: [
       "Social Media Paid Ads",
@@ -45,7 +45,7 @@ export const subCardData = [
     heading: "Go Pro",
     min: "6",
     price: "1500",
-    addOn: "+ Everything on Go Scale",
+    addOn: "Everything on Go Scale +",
     perPrice: "700",
     services: [
       "Engagement Strategy",
@@ -80,7 +80,7 @@ export const cmoSubCardData = [
     min: "6",
     price: "900",
     perPrice: "500",
-    addOn: "+ Everything on Go Organic",
+    addOn: "Everything on Go Organic +",
     services: [
       "Social Media Paid Ads",
       "Acquisition Strategy ",
@@ -96,7 +96,7 @@ export const cmoSubCardData = [
     min: "6",
     price: "1500",
     perPrice: "700",
-    addOn: "+ Everything on Go Scale",
+    addOn: "Everything on Go Scale +",
     services: [
       "Engagement Strategy",
       "Google Ads & SEO",
@@ -233,7 +233,8 @@ export const CxoCardData = [
         {" "}
       </iframe>
     ),
-    description: "Let us handle your marketing and finance your ads for you!",
+    description:
+      "Nurture your most valuable asset, your team, with our HR expertise.",
   },
   {
     image: csoImage,

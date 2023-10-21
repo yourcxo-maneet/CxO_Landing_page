@@ -220,9 +220,8 @@ const CMO = () => {
               Do you want to start small ? No worries!
             </Typography>
             <Typography className="caption">
-              Customize a plan that perfectly aligns with your unique
-              requirements and budget. Connect with us today to turbocharge your
-              marketing endeavors.
+              Customize a plan that directly aligns with your objectives,
+              connect with us today.
             </Typography>
           </Box>
           <Box>

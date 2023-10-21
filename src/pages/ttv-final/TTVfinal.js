@@ -121,8 +121,9 @@ function TTVfinal() {
       </Box>
       <Box className="section2">
         <p className="heading">
-          Your CMO’s Exclusive <br />
-          Bespoke Subscriptions
+          We Deliver Cutting-Edge{" "}
+          <span className="heading-special text-bold">Digital Marketing</span>{" "}
+          Solutions Tailored To Your Needs
         </p>
         <Grid
           maxWidth={"80%"}
@@ -180,9 +181,8 @@ function TTVfinal() {
               Do you want to start small ? No worries!
             </Typography>
             <Typography className="caption">
-              Customize a plan that perfectly aligns with your unique
-              requirements and budget. Connect with us today to turbocharge your
-              marketing endeavors.
+              Customize a plan that directly aligns with your objectives,
+              connect with us today.
             </Typography>
           </Box>
           <Box>

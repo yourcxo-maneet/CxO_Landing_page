@@ -77,7 +77,7 @@ const Footer = () => {
       <Box></Box>
       <hr></hr>
       <Typography>
-        © 2023 Your CxO Online Solutions. All Rights Reserved.
+        © 2023 Your CxO Online Solutions Inc. All Rights Reserved.
       </Typography>
       <Box></Box>
     </Box>
