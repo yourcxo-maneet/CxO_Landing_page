@@ -197,6 +197,129 @@ export const cfoSubCardData = [
     ],
   },
 ];
+export const csoSubCardData = [
+  {
+    image: goOrganic,
+    heading: "Ideation",
+    min: "2",
+    price: "1400",
+    services: [
+      "Concept Document",
+      "Market Research",
+      "Customer Persona Definition",
+      "Book-keeping Platform Setup and Automation (excluding Integrations)",
+      "Business Roadmap",
+    ],
+  },
+  {
+    image: GoScale,
+    heading: "Roadmap",
+    min: "2",
+    price: "2100",
+    addOn: "Everything on Ideation +",
+    services: ["Revenue Model", "Cash Flow Plan", "Multi Year Forecast (3/5)"],
+  },
+  {
+    image: GoPro,
+    heading: "Market Ready",
+    min: "3",
+    price: "3500",
+    addOn: "Everything on Roadmap +",
+    services: [
+      "Business Plan",
+      "Logo & Brand Book",
+      "GTM Strategy",
+      "Pitch Deck",
+    ],
+  },
+];
+export const cooSubCardData = [
+  {
+    image: goOrganic,
+    heading: "Virtual Assist",
+    min: "3",
+    price: "800",
+    services: [
+      "Virtual Assistance",
+      "Task Management @ Zoho Projects",
+      "Slack & Zoho Projects Support",
+      "Your CxOs On-demand 4 hours per month",
+    ],
+  },
+  {
+    image: GoScale,
+    heading: "Ops Go",
+    min: "2",
+    price: "1900",
+    addOn: "Everything on Virtual Assist +",
+    services: ["Revenue Model", "Cash Flow Plan", "Multi Year Forecast (3/5)"],
+  },
+  {
+    image: GoPro,
+    heading: "Ops Squad",
+    min: "3",
+    price: "3500",
+    addOn: "Everything on Ops Go +",
+    services: [
+      "24-30 hours per week",
+      "Dedicated Your CDO",
+      "Two dedicated Ops Experts",
+      "One Business Day SLA x 5 days",
+      "Slack & Zoho Projects Support",
+      "Weekly Recommendations",
+    ],
+  },
+];
+export const ctoSubCardData = [
+  {
+    image: goOrganic,
+    heading: "Bespoke",
+    min: "2-3",
+    price: "9000/12000",
+    services: [
+      "Custom UI & UX",
+      "Website Content & Pages",
+      "SMS & Email Integration",
+      "Hosting on Cloud Server",
+      "Support & Maintenance (90 days)",
+      "Organic Digital Marketing Kit",
+      "Content Writing & SEO Setup",
+      "Logo & Brand Book",
+    ],
+  },
+  {
+    image: GoScale,
+    heading: "Go Start",
+    min: "3",
+    price: "5500",
+    addOn: "",
+    services: [
+      "Amazon/Flipkart/Alibaba/Walmart Setup (Any 1)",
+      "Logo & Brand Book",
+      "Catalogue/Product Management",
+      "Automated alerts (Email/SMS/WhatsApp)",
+      "Shipping Automation",
+      "Support & Maintenance (30 days)",
+    ],
+  },
+  {
+    image: GoPro,
+    heading: "Go Scale",
+    min: "2-3",
+    price: "10,000",
+    addOn: "",
+    services: [
+      "Amazon/Flipkart/Alibaba/Walmart Setup (Any 3)",
+      "Logo & Brand Book",
+      "Catalogue/Product Management",
+      "Automated alerts (Email/SMS/WhatsApp)",
+      "Shipping Automation",
+      "Inventory Upload upto 100",
+      "Marketplace Competitor Insights",
+      "Support & Maintenance (30 days)",
+    ],
+  },
+];
 
 export const CxoCardData = [
   {
@@ -358,6 +481,61 @@ export const planCardData = [
     ],
   },
 ];
+export const chroPlanCardData = [
+  {
+    title: "Create a Business Roadmap",
+    price: "4500",
+    features: [
+      "Pitch Deck",
+      "Revenue Model & Cash Flow Forecast",
+      "Startup Valuations",
+      "Investor Pitch",
+      "Logo & Brand Book",
+    ],
+  },
+  {
+    title: "Get Virtual Assistance",
+    price: "800",
+    features: [
+      "Virtual Assistance",
+      "Task Management @Zoho Projects",
+      "Slack & Zoho Projects Support",
+      "Your CxOs On-demand 4 hours per month",
+    ],
+  },
+  {
+    title: "Kickstart your Ops",
+    price: "1900",
+    features: [
+      "16-20 hours per week",
+      "One dedicated Ops Expert",
+      "One Business Day SLA x 5 days",
+      "Slack & Zoho Projects Support",
+    ],
+  },
+  {
+    title: "Build your Ops Squad",
+    price: "2900",
+    features: [
+      "24-30 hours per week",
+      "Dedicated Your CDO",
+      "Two dedicated Ops Experts",
+      "One Business Day SLA x 5 days",
+      "Slack & Zoho Projects Support",
+    ],
+  },
+  {
+    title: "Scale your Ops",
+    price: "4800",
+    features: [
+      "32-40 hours per week",
+      "Dedicated Your CDO",
+      "Two dedicated Ops Experts",
+      "Custom SLA x 7 days",
+      "Slack Support & Zoho Projects",
+    ],
+  },
+];
 
 export const cmoPlanCardData = [
   {
@@ -409,7 +587,7 @@ export const cmoPlanCardData = [
     title: "Build a Marketplace",
     price: "5500",
     features: [
-      "Amazon/Flipkart/Alibaba/Walmart Setup (Any 1)",
+      `Amazon/Flipkart/Alibaba${"  "}/Walmart Setup (Any 1)`,
       "Logo & Brand Book",
       "Catalogue Management",
       "Chatbot Integration",
@@ -496,6 +674,134 @@ export const cfoPlanCardData = [
       "Logo & Brand Book",
       "Website Template & Pages",
       "SMS & Email Integration",
+    ],
+  },
+];
+export const csoPlanCardData = [
+  {
+    title: "Develop a GTM Strategy",
+    price: "600- $ 1900",
+    features: [
+      "Market Research",
+      "Communication Strategy",
+      "Distribution Strategy",
+      "Target Market Evaluation",
+      "Brand Archetypes & Persona",
+    ],
+  },
+  {
+    title: "Create a Business Roadmap",
+    price: "4500",
+    features: [
+      "Pitch Deck",
+      "Revenue Model & Cash Flow Forecast",
+      "Startup Valuations",
+      "Investor Pitch",
+      "Logo & Brand Book",
+    ],
+  },
+  {
+    title: "Create a Shopify Store",
+    price: "6500",
+    features: [
+      "Template Library - Shopify",
+      "Logo & Brand Book",
+      "Website Template & Pages",
+      "Chatbot Integration",
+    ],
+  },
+  {
+    title: "Build an E-Commerce Store",
+    price: "2100",
+    features: [
+      "Template Library - ThemeForest",
+      "Logo & Brand Book",
+      "Website Template & Pages",
+      "Chatbot Integration",
+    ],
+  },
+];
+export const cooPlanCardData = [
+  {
+    title: "Kickstart your Team",
+    price: "800",
+    features: [
+      "Talent Acquisition 1 Freelancers & 1 Full Time Hire",
+      "HR Policies",
+      "HR Operations* (upto 5 members)",
+    ],
+  },
+  {
+    title: "Setup your Team",
+    price: "1200",
+    features: [
+      "Talent Acquisition 2 Freelancers & 2 Full Time Hire",
+      "HR Policies",
+      "HR Operations*  (upto 20 members)",
+      "OKR Strategy & Planning",
+    ],
+  },
+  {
+    title: "Scale your Team",
+    price: "2200",
+    features: [
+      "Talent Acquisition 4 Freelancers & 4 Full Time Hire",
+      "HR Policies",
+      "HR Operations* (upto 40 members)",
+      "HR Support Window",
+    ],
+  },
+  {
+    title: "Develop a GTM Strategy",
+    price: "600- $ 1900",
+    features: [
+      "Market Research",
+      "Communication Strategy",
+      "Distribution Strategy",
+      "Target Market Evaluation",
+      "Brand Archetypes & Persona",
+    ],
+  },
+];
+export const ctoPlanCardData = [
+  {
+    title: "Build a Wordpress Website",
+    price: "4500",
+    features: [
+      "Template Library - ThemeForest",
+      "Logo & Brand Book",
+      "Website Template & Pages",
+      "Chatbot Integration",
+    ],
+  },
+  {
+    title: "Software Development",
+    price: "1000",
+    features: [
+      "Custom UI & UX",
+      "Logo & Brand Book",
+      "Website Content & Pages",
+      "Chatbot Integration",
+    ],
+  },
+  {
+    title: "Build a Marketplace",
+    price: "5500",
+    features: [
+      "Amazon/Flipkart/Alibaba/Walmart Setup (Any 1)",
+      "Logo & Brand Book",
+      "Catalogue/Product Management",
+      "Chatbot Integration",
+    ],
+  },
+  {
+    title: "Build an E-Commerce Store",
+    price: "2100",
+    features: [
+      "Template Library - ThemeForest",
+      "Logo & Brand Book",
+      "Website Template & Pages",
+      "Chatbot Integration",
     ],
   },
 ];

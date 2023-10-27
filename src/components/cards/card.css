@@ -48,8 +48,8 @@
   margin-top: 0.5rem;
 }
 .subcard-wrapper {
-  width: 250px;
-  height: 330px;
+  width: 210px;
+  height: 290px;
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
@@ -249,7 +249,7 @@
     font-weight: bold;
   }
   .subcard-wrapper {
-    width: 80%;
+    width: 75%;
     height: 270px;
     display: flex;
     flex-direction: column;

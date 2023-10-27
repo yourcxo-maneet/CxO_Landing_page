@@ -15,7 +15,13 @@ import { useTheme } from "@mui/material/styles";
 import {
   cfoPlanCardData,
   cfoSubCardData,
+  chroPlanCardData,
+  chroSubCardData,
   cmoPlanCardData,
+  cooPlanCardData,
+  cooSubCardData,
+  csoPlanCardData,
+  csoSubCardData,
   cxoCardData,
   planCardData,
   subCardData,
@@ -26,7 +32,7 @@ import CarouselSlick from "../../components/carousel-slick/CarouselSlick";
 import calendarImage from "../../assets/cfoCalendarPic.svg";
 import { useEffect, useState } from "react";
 
-const CFO = () => {
+const COO = () => {
   const [open, setOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -74,19 +80,18 @@ const CFO = () => {
           <Grid className="section1-left" item xs={12} md={6}>
             <Box sx={{ maxWidth: "100%", paddingLeft: "1rem" }}>
               <Typography className="heading">
-                Meet <span className="special-text">Your CFO</span> Today
+                Meet <span className="special-text">Your COO</span> Today
               </Typography>
               {/* <Typography className="heading">Today</Typography> */}
               <p className="sub-text">
-                Navigate the complex{" "}
-                <span className="bold-text">financial landscape </span> with
-                confidence, backed by our{" "}
-                <span className="bold-text">CFO subscription</span> services
-                designed to drive fiscal growth.
+                Prepare your business for streamlined and{" "}
+                <span className="bold-text">efficient operations </span>with our{" "}
+                <span className="bold-text">COO subscription services, </span>{" "}
+                providing you a clear path to sustainable and scalable success.
               </p>
               <Box className="section1-buttons">
                 <SolidButton
-                  content={"Meet Your CFO"}
+                  content={"Meet Your COO"}
                   widget={
                     <iframe
                       width="100%"
@@ -111,7 +116,7 @@ const CFO = () => {
               <iframe
                 width="100%"
                 height="750px"
-                src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourcfo"
+                src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourcso"
                 frameborder="0"
                 allowfullscreen=""
               >
@@ -123,9 +128,10 @@ const CFO = () => {
       </Box>
       <Box className="section2">
         <p className="heading">
-          We deliver <span className="heading-special">Data-driven</span>{" "}
-          digital <br />
-          Financial solutions tailored to your needs
+          We deliver
+          <span className="heading-special">Streamlined Operations</span>{" "}
+          tailored to your needs
+          <br />
         </p>
         <Grid
           maxWidth={"80%"}
@@ -133,7 +139,7 @@ const CFO = () => {
           rowSpacing={1}
           columnSpacing={{ xs: 1, sm: 2, md: 3 }}
         >
-          {cfoSubCardData.map((data) => {
+          {cooSubCardData.map((data) => {
             return (
               <Grid item md={4} sm={12}>
                 <SubCard data={data} />
@@ -173,11 +179,11 @@ const CFO = () => {
           </Box>
           <Box className="section3-subButton">
             <button className="subCard-button" onClick={scrollToTop}>
-              Meet Your CFO Today
+              Meet Your COO Today
             </button>
           </Box>
         </Box>
-        <Crousel data={cmoPlanCardData} Card={PlanCard} />
+        <Crousel data={cooPlanCardData} Card={PlanCard} />
       </Box>
       <Box className="section5">
         <Box sx={{ margin: "0 auto", width: "80%" }}>
@@ -217,4 +223,4 @@ const CFO = () => {
   );
 };
 
-export default CFO;
+export default COO;

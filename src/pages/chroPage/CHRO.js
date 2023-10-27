@@ -15,6 +15,7 @@ import { useTheme } from "@mui/material/styles";
 import {
   cfoPlanCardData,
   cfoSubCardData,
+  chroPlanCardData,
   chroSubCardData,
   cmoPlanCardData,
   cxoCardData,
@@ -75,19 +76,19 @@ const CHRO = () => {
           <Grid className="section1-left" item xs={12} md={6}>
             <Box sx={{ maxWidth: "100%", paddingLeft: "1rem" }}>
               <Typography className="heading">
-                Meet <span className="special-text">Your CFO</span> Today
+                Meet <span className="special-text">Your CHRO</span> Today
               </Typography>
               {/* <Typography className="heading">Today</Typography> */}
               <p className="sub-text">
-                Navigate the complex{" "}
-                <span className="bold-text">financial landscape </span> with
-                confidence, backed by our{" "}
-                <span className="bold-text">CFO subscription</span> services
-                designed to drive fiscal growth.
+                Elevate your{" "}
+                <span className="bold-text">human resources strategies </span>{" "}
+                nd maximize your workforce's potential with our{" "}
+                <span className="bold-text">subscription services </span>{" "}
+                designed to shape a dynamic, efficient, and engaged workplace.
               </p>
               <Box className="section1-buttons">
                 <SolidButton
-                  content={"Meet Your CFO"}
+                  content={"Meet Your CHRO"}
                   widget={
                     <iframe
                       width="100%"
@@ -111,8 +112,8 @@ const CHRO = () => {
             <Box className="image-wrapper">
               <iframe
                 width="100%"
-                height="693px"
-                src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourcfo"
+                height="750px"
+                src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourchro"
                 frameborder="0"
                 allowfullscreen=""
               >
@@ -124,9 +125,8 @@ const CHRO = () => {
       </Box>
       <Box className="section2">
         <p className="heading">
-          We deliver <span className="heading-special">Data-driven</span>{" "}
-          digital <br />
-          Financial solutions tailored to your needs
+          We deliver <span className="heading-special">Comprehensive</span> HR
+          Solutions tailored to your needs <br />
         </p>
         <Grid
           maxWidth={"80%"}
@@ -141,7 +141,7 @@ const CHRO = () => {
               </Grid>
             );
           })}
-          <Typography
+          {/* <Typography
             sx={{
               marginTop: "2rem",
               width: "100%",
@@ -156,7 +156,7 @@ const CHRO = () => {
           >
             *Funding applicable to Finance Scale & Finance Pro Subscriptions
             only
-          </Typography>
+          </Typography> */}
         </Grid>
       </Box>
 
@@ -174,11 +174,11 @@ const CHRO = () => {
           </Box>
           <Box className="section3-subButton">
             <button className="subCard-button" onClick={scrollToTop}>
-              Meet Your CFO Today
+              Meet Your CHRO Today
             </button>
           </Box>
         </Box>
-        <Crousel data={cmoPlanCardData} Card={PlanCard} />
+        <Crousel data={chroPlanCardData} Card={PlanCard} />
       </Box>
       <Box className="section5">
         <Box sx={{ margin: "0 auto", width: "80%" }}>

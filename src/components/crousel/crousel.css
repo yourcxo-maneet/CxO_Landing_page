@@ -1,6 +1,52 @@
-.planCard-slider .slick-list .slick-track {
-  display: flex !important;
-  /* gap: 20px !important; */
-  /* padding: 2rem 0px; */
+.App-carousel {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem 0 1rem 0;
+}
+
+.seperator {
+  width: 100%;
+}
+
+.controls-wrapper {
+  width: 100%;
+}
+
+.carousel-wrapper {
+  width: 100%;
+}
+
+.rec-carousel-item:focus {
+  outline: none;
+  box-shadow: inset 0 0 1px 0px rgb(252, 255, 94) !important;
+}
+
+.rec-dot {
+  display: none !important;
+}
+.carousel-wrapper button {
+  border-radius: 66px;
+  background: var(--White, #f6f6f5);
+  box-shadow: #eea81e 0px 0px 1px 3px !important;
+}
+.carousel-wrapper button:hover {
+  background-color: #eea81e !important;
+  box-shadow: #eea81e 0px 0px 1px 3px !important;
+}
+.carousel-wrapper button:active {
+  background-color: #eea81e !important;
+  box-shadow: #eea81e 0px 0px 1px 3px !important;
+}
+@media (max-width: 768px) {
+  .carousel-wrapper button {
+    border-radius: 66px;
+    width: 10px;
+    background: var(--White, #f6f6f5);
+    box-shadow: #eea81e 0px 0px 1px 3px !important;
+  }
 }

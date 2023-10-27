@@ -71,7 +71,7 @@ const PlanCard = ({ data }) => {
               </Box>
               <Box className="card-lower_right">
                 {" "}
-                <Typography variant="" sx={{ fontSize: "15px" }}>
+                <Typography variant="" sx={{ fontSize: "13px" }}>
                   {item}
                 </Typography>
               </Box>
