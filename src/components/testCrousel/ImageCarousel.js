@@ -7,10 +7,11 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 function ImageCarousel() {
   var settings = {
+    className: "cxoCard-slider",
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
     prevArrow: (

@@ -10,19 +10,23 @@
   flex-shrink: 0;
 }
 
-.slick-slider .slick-list .slick-track {
+.cxoCard-slider .slick-list .slick-track {
   display: flex !important;
   gap: 80px !important;
   padding: 2rem 0px;
   align-items: center;
 }
 .slick-slider .slick-prev {
+  width: 35px;
+  height: 35px;
   z-index: 1000;
   color: #eea81e !important;
   background-color: #302e29 !important;
   left: -4%;
 }
 .slick-slider .slick-next {
+  width: 35px;
+  height: 35px;
   z-index: 1000;
   color: #eea81e !important;
   background-color: #302e29 !important;

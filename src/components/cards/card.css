@@ -3,7 +3,7 @@
 }
 .card-wrapper {
   display: flex;
-  height: 520px;
+  height: 560px;
   flex-direction: column;
   padding: 2rem;
   margin: 0 auto;
@@ -48,8 +48,8 @@
   margin-top: 0.5rem;
 }
 .subcard-wrapper {
-  width: 80%;
-  height: 270px;
+  width: 250px;
+  height: 330px;
   display: flex;
   flex-direction: column;
   padding: 1.5rem;

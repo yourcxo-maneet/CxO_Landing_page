@@ -107,10 +107,56 @@ export const cmoSubCardData = [
     ],
   },
 ];
-export const cfoSubCardData = [
+export const chroSubCardData = [
   {
     image: goOrganic,
     heading: "Starter Go",
+    min: "3",
+    price: "800",
+    perPrice: "",
+    services: [
+      "Talent Acquisition 1 Freelancers & 1 Full Time Hire",
+      "HR Policies",
+      "HR Operations* (upto 5 members)",
+    ],
+  },
+  {
+    image: GoScale,
+    heading: "Go Scale",
+    min: "3",
+    price: "1200",
+    perPrice: "",
+    addOn: "Everything on Starter Go +",
+    services: [
+      "Talent Acquisition 2 Freelancers & 2 Full Time Hire",
+      "HR Policies",
+      "HR Operations*  (upto 20 members)",
+      "Marketing Automation Setup",
+      "OKR Strategy & Planning",
+      "Employee Engagement",
+    ],
+  },
+  {
+    image: GoPro,
+    heading: "Go Pro",
+    min: "6",
+    price: "2200",
+    perPrice: "",
+    addOn: "Everything on Go Scale +",
+    services: [
+      "Talent Acquisition 4 Freelancers & 4 Full Time Hire",
+      "HR Policies",
+      "HR Operations*  (upto 40 members)",
+      "OKR Strategy, Planning & Execution",
+      "Employee Engagement",
+      "HR Support Window",
+    ],
+  },
+];
+export const cfoSubCardData = [
+  {
+    image: goOrganic,
+    heading: "Finance Go",
     min: "3",
     price: "950",
     services: [
@@ -123,10 +169,10 @@ export const cfoSubCardData = [
   },
   {
     image: GoScale,
-    heading: "Go Scale",
+    heading: "Finance Scale",
     min: "3",
     price: "1800",
-    addOn: "+ Starter Go",
+    addOn: "Everything on Starter Go +",
     services: [
       "Bookkeeping (Weekly) 1 Shadow Expert Turnover less than 1 Million",
       "Financial Consultancy (Upto 8 hours per month)",
@@ -137,10 +183,10 @@ export const cfoSubCardData = [
   },
   {
     image: GoPro,
-    heading: "Go Pro",
+    heading: "Finance Pro",
     min: "6",
     price: "2700",
-    addOn: "+ Go Scale",
+    addOn: "Everything on Go Scale +",
     services: [
       "Bookkeeping (Daily) 1 Freelancer & 1 Shadow Expert Business less than USD 5 Million",
       "Financial Consultancy (Upto 20 hours per month)",
@@ -393,33 +439,33 @@ export const cmoPlanCardData = [
 ];
 export const cfoPlanCardData = [
   {
-    title: "Software Development",
-    price: "1000",
+    title: "Create an Ideation Strategy",
+    price: "1400",
     features: [
-      "Custom UI & UX",
-      "Logo & Brand Book",
-      "Website Template & Pages",
-      "SMS & Email Integration",
+      "Concept Document",
+      "Market Research",
+      "Customer Persona Definition",
+      "Business Roadmap",
     ],
   },
   {
-    title: "Martket Ready",
+    title: "Create a Business Roadmap",
+    price: "2100",
+    features: [
+      "Revenue Model",
+      "Market Research",
+      "Cash Flow Plan",
+      "Multi Year Forecast (3/5)",
+    ],
+  },
+  {
+    title: "Get Market Ready",
     price: "2100",
     features: [
       "Business Plan",
       "Logo & Brand Book",
       "GTM Strategy",
       "Pitch Deck",
-    ],
-  },
-  {
-    title: "Woocommerce",
-    price: "5500",
-    features: [
-      "Template Library - ThemeForest",
-      "Logo & Brand Book",
-      "Website Template & Pages",
-      "SMS & Email Integration",
     ],
   },
   {

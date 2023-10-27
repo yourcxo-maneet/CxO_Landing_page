@@ -7,12 +7,16 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 function CarouselSlick() {
   var settings = {
+    className: "cxoCard-slider",
     dots: false,
-    infinite: false,
-    speed: 500,
+    infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
     initialSlide: 0,
+    pauseOnHover: true,
     prevArrow: (
       <ArrowBackIcon
         className="slick-arrow"

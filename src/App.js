@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import TTVfinal from "./pages/ttv-final/TTVfinal";
 import CMO from "./pages/cmoPage/CMO";
 import CFO from "./pages/cfoPage/CFO";
+import CHRO from "./pages/chroPage/CHRO";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
         <Route path="/" element={<TTVfinal />} />
         <Route path="/cmo" element={<CMO />} />
         <Route path="/cfo" element={<CFO />} />
+        <Route path="/chro" element={<CHRO />} />
       </Routes>
     </BrowserRouter>
   );
