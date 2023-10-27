@@ -1,10 +1,10 @@
 import { Box, Divider, Typography } from "@mui/material";
 import React from "react";
-import logo from "../../assets/cxoLogoFooter.svg";
+import logo from "../../assets/logoNavbar.svg";
 import footerlogo from "../../assets/footerlogo.svg";
 import LinkedinLogo from "../../assets/linkedin.svg";
 import FacebookLogo from "../../assets/facebook.svg";
-import Upwork from "../../assets/upwork.svg";
+import Upwork from "../../assets/upWork.svg";
 import Insta from "../../assets/instagram.svg";
 import HeadsetIcon from "@mui/icons-material/Headset";
 import LanguageIcon from "@mui/icons-material/Language";

@@ -1,7 +1,7 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import "./navBar.css";
-import logo from "../../assets/newLogo.svg";
+import logo from "../../assets/logoNavbar.svg";
 import PrimaryButton from "../buttons/PrimaryButton";
 
 const NavBar = () => {
@@ -11,10 +11,10 @@ const NavBar = () => {
         <img src={logo} />
       </Box>
       <Box>
-        <PrimaryButton
+        {/* <PrimaryButton
           content={"visit website"}
           url={"https://www.yourcxo.online/"}
-        />
+        /> */}
       </Box>
     </Box>
   );

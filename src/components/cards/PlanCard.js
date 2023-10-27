@@ -24,11 +24,19 @@ const PlanCard = ({ data }) => {
     setOpen(false);
   };
   return (
-    <Box minWidth="210px" className="subcard-wrapper">
+    <Box className="subcard-wrapper">
       <Box className="card-upper">
         <Box className="card-plan-upper-1">
           <Box className="card-upper-1_Planbox">
-            <Typography sx={{ fontWeight: "bold" }} variant="body1">
+            <Typography
+              sx={{
+                fontWeight: "bold",
+                textAlign: "center",
+                marginBottom: "10px",
+                fontSize: { xs: "0.8rem", md: "1rem", lg: "1rem" },
+              }}
+              variant="body1"
+            >
               {data.title}
             </Typography>
           </Box>
@@ -37,7 +45,7 @@ const PlanCard = ({ data }) => {
           <Box sx={{ textAlign: "center" }}>
             <Typography
               sx={{
-                fontSize: "32px",
+                fontSize: { md: "24px", lg: "26px", xs: "30px" },
                 fontWeight: "500",
                 color: "rgba(238, 169, 31, 1)",
               }}
@@ -62,11 +70,7 @@ const PlanCard = ({ data }) => {
             </Box>
             <Box className="card-lower_right">
               {" "}
-              <Typography
-                variant="subtitle2"
-                sx={{ fontSize: "11px" }}
-                display="block"
-              >
+              <Typography variant="" sx={{ fontSize: "15px" }}>
                 {item}
               </Typography>
             </Box>

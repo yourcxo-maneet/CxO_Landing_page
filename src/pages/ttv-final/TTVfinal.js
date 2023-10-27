@@ -8,7 +8,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import "../../pages/pages.css";
 import NavBar from "../../components/navBar/NavBar";
-import heroImage from "../../assets/heroImage.svg";
+import calendarImage from "../../assets/calendarPic.svg";
 import SolidButton from "../../components/buttons/SolidButton";
 import OutlinedButton from "../../components/buttons/OutlinedButton";
 import SubCard from "../../components/cards/SubCard";
@@ -105,6 +105,10 @@ function TTVfinal() {
             </Box>
           </Grid>
           <Grid className="section1-right" item xs={12} md={6}>
+            <Box className="image-avatar">
+              {" "}
+              <img src={calendarImage} alt="calendarImage" />
+            </Box>
             <Box className="image-wrapper">
               <iframe
                 width="100%"
@@ -185,7 +189,7 @@ function TTVfinal() {
               connect with us today.
             </Typography>
           </Box>
-          <Box>
+          <Box className="section3-subButton">
             <button className="subCard-button" onClick={scrollToTop}>
               Meet Your CMO Today
             </button>

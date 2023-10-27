@@ -1,7 +1,7 @@
 import cfoImage from "./assets/newCfo.svg";
-import chroImage from "./assets/newChro.svg";
+import chroImage from "./assets/Newchro.svg";
 import ctoImage from "./assets/newCto.svg";
-import cmoImage from "./assets/Faith.svg";
+import cmoImage from "./assets/newCmo.svg";
 import csoImage from "./assets/newCso.svg";
 import cooImage from "./assets/newCoo.svg";
 import goOrganic from "./assets/goOrganic.svg";
@@ -154,55 +154,6 @@ export const cfoSubCardData = [
 
 export const CxoCardData = [
   {
-    image: cfoImage,
-    title: "CFO",
-    widget: (
-      <iframe
-        width="100%"
-        height="750px"
-        src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourcfo"
-        frameborder="0"
-        allowfullscreen=""
-      >
-        {" "}
-      </iframe>
-    ),
-    description:
-      "Secure your financial future with our expert fiscal management.",
-  },
-  {
-    image: cooImage,
-    title: "COO",
-    widget: (
-      <iframe
-        width="100%"
-        height="750px"
-        src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourcfo"
-        frameborder="0"
-        allowfullscreen=""
-      >
-        {" "}
-      </iframe>
-    ),
-    description: "Let us handle your project management & operations for you!",
-  },
-  {
-    image: cmoImage,
-    title: "CMO",
-    widget: (
-      <iframe
-        width="100%"
-        height="750px"
-        src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourcmo"
-        frameborder="0"
-        allowfullscreen=""
-      >
-        {" "}
-      </iframe>
-    ),
-    description: "Let us handle your marketing and finance your ads for you!",
-  },
-  {
     image: ctoImage,
     title: "CTO",
     widget: (
@@ -237,6 +188,23 @@ export const CxoCardData = [
       "Nurture your most valuable asset, your team, with our HR expertise.",
   },
   {
+    image: cfoImage,
+    title: "CFO",
+    widget: (
+      <iframe
+        width="100%"
+        height="750px"
+        src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourcfo"
+        frameborder="0"
+        allowfullscreen=""
+      >
+        {" "}
+      </iframe>
+    ),
+    description:
+      "Secure your financial future with our expert fiscal management.",
+  },
+  {
     image: csoImage,
     title: "CSO",
     widget: (
@@ -252,6 +220,38 @@ export const CxoCardData = [
     ),
     description:
       "Navigate your business journey with our insightful strategy guidance.",
+  },
+  {
+    image: cooImage,
+    title: "COO",
+    widget: (
+      <iframe
+        width="100%"
+        height="750px"
+        src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourcfo"
+        frameborder="0"
+        allowfullscreen=""
+      >
+        {" "}
+      </iframe>
+    ),
+    description: "Let us handle your project management & operations for you!",
+  },
+  {
+    image: cmoImage,
+    title: "CMO",
+    widget: (
+      <iframe
+        width="100%"
+        height="750px"
+        src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourcmo"
+        frameborder="0"
+        allowfullscreen=""
+      >
+        {" "}
+      </iframe>
+    ),
+    description: "Let us handle your marketing and finance your ads for you!",
   },
 ];
 
@@ -315,6 +315,31 @@ export const planCardData = [
 
 export const cmoPlanCardData = [
   {
+    title: "Develop a GTM Strategy",
+    price: "600- $1900",
+    features: [
+      "Market Research",
+      "Communication Strategy",
+      "Distribution Strategy",
+      "Target Market Evaluation",
+      "Brand Archetypes & Persona",
+    ],
+  },
+  {
+    title: " Marketing Operations",
+    price: "2700",
+    features: [
+      "Email Marketing",
+      "SMS or Whatsapp Marketing",
+      "Marketing Automation",
+    ],
+  },
+  {
+    title: "SEO Operations",
+    price: "550",
+    features: ["SEO Audit", "SEO Operations"],
+  },
+  {
     title: "Build a Wordpress Website",
     price: "4500",
     features: [
@@ -354,16 +379,7 @@ export const cmoPlanCardData = [
       "Chatbot Integration",
     ],
   },
-  {
-    title: "Develop a GTM Strategy",
-    price: "600- $1900",
-    features: [
-      "Market Research",
-      "Target Market Evaluation",
-      "Communication Strategy",
-      "Distribution Strategy",
-    ],
-  },
+
   {
     title: "Create a Shopify Store",
     price: "6500",

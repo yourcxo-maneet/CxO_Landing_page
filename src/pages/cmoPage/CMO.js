@@ -9,6 +9,7 @@ import { useTheme } from "@mui/material/styles";
 import "../../pages/pages.css";
 import NavBar from "../../components/navBar/NavBar";
 import heroImage from "../../assets/Calendar.svg";
+import calendarImage from "../../assets/calendarPic.svg";
 import Banner from "../../assets/banner.svg";
 import SolidButton from "../../components/buttons/SolidButton";
 import OutlinedButton from "../../components/buttons/OutlinedButton";
@@ -78,7 +79,7 @@ const CMO = () => {
           columnSpacing={{ xs: 1, sm: 2, md: 3 }}
         >
           <Grid className="section1-left" item xs={12} md={6}>
-            <Box sx={{ maxWidth: "100%", paddingLeft: "1rem" }}>
+            <Box sx={{ maxWidth: "100%" }}>
               <Typography className="heading">
                 Meet <span className="special-text">Your CMO</span>
               </Typography>
@@ -90,29 +91,33 @@ const CMO = () => {
                 tailored to elevate your brand's reach and impact. Leverage Your
                 CMO ad funding to elevate your brand
               </p>
-            </Box>
-            <Box className="section1-buttons">
-              <SolidButton
-                content={"Meet Your CMO For Ad Funding"}
-                widget={
-                  <iframe
-                    frameborder="0"
-                    style={{
-                      height: "760px",
-                      width: isMobile ? "100%" : "500px",
-                      border: "none",
-                    }}
-                    src="https://forms.zohopublic.in/yourcxoonline/form/AdFundApplication/formperma/NA8G68NnhgfIRQZ4GHM7gf4p3d3s1BmxBB7gN4z7qqE"
-                  ></iframe>
-                }
-              />
+              <Box className="section1-buttons">
+                <SolidButton
+                  content={"Meet Your CMO For Ad Funding"}
+                  widget={
+                    <iframe
+                      frameborder="0"
+                      style={{
+                        height: "760px",
+                        width: isMobile ? "100%" : "500px",
+                        border: "none",
+                      }}
+                      src="https://forms.zohopublic.in/yourcxoonline/form/AdFundApplication/formperma/NA8G68NnhgfIRQZ4GHM7gf4p3d3s1BmxBB7gN4z7qqE"
+                    ></iframe>
+                  }
+                />
+              </Box>
             </Box>
           </Grid>
           <Grid className="section1-right" item xs={12} md={6}>
+            <Box className="image-avatar">
+              {" "}
+              <img src={calendarImage} alt="calendarImage" />
+            </Box>
             <Box className="image-wrapper">
               <iframe
                 width="100%"
-                height="555px"
+                height="620px"
                 src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourcmo"
                 frameborder="0"
                 allowfullscreen=""
@@ -185,7 +190,7 @@ const CMO = () => {
           Get Your Next 10 Clients for Free
         </Typography>
         <Typography className="sub-text">
-          Get Approved for $300-$15,000 Advertising Budget Fast
+          Get Approved for $300-$15,000 of Advertising Budget Fast
         </Typography>
         <button className="subCard-button" onClick={handleClickOpen}>
           Apply for Ad Funding
@@ -221,10 +226,11 @@ const CMO = () => {
             </Typography>
             <Typography className="caption">
               Customize a plan that directly aligns with your objectives,
+              <br />
               connect with us today.
             </Typography>
           </Box>
-          <Box>
+          <Box className="section3-subButton">
             <button className="subCard-button" onClick={scrollToTop}>
               Meet Your CMO Today
             </button>

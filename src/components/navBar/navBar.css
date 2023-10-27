@@ -8,6 +8,7 @@
 }
 .navbar-wrapper img {
   width: 200px;
+  padding-left: 92px;
 }
 
 @media (max-width: 768px) {
