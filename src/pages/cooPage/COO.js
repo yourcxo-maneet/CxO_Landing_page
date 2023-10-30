@@ -29,7 +29,7 @@ import {
 import Crousel from "../../components/crousel/Crousel";
 import Imagecarousel from "../../components/testCrousel/ImageCarousel";
 import CarouselSlick from "../../components/carousel-slick/CarouselSlick";
-import calendarImage from "../../assets/cfoCalendarPic.svg";
+import calendarImage from "../../assets/COO_profile.svg";
 import { useEffect, useState } from "react";
 
 const COO = () => {
@@ -80,7 +80,7 @@ const COO = () => {
           <Grid className="section1-left" item xs={12} md={6}>
             <Box sx={{ maxWidth: "100%", paddingLeft: "1rem" }}>
               <Typography className="heading">
-                Meet <span className="special-text">Your COO</span> Today
+                Meet <span className="special-text">Your COO</span>
               </Typography>
               {/* <Typography className="heading">Today</Typography> */}
               <p className="sub-text">
@@ -94,7 +94,7 @@ const COO = () => {
                   content={"Meet Your COO"}
                   widget={
                     <iframe
-                      width="100%"
+                      width={isMobile ? "100%" : "500px"}
                       height="750px"
                       src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourcto"
                       frameborder="0"
@@ -129,21 +129,15 @@ const COO = () => {
       <Box className="section2">
         <p className="heading">
           We deliver
-          <span className="heading-special">Streamlined Operations</span>{" "}
+          <span className="heading-special">Streamlined Operations</span>
           tailored to your needs
-          <br />
         </p>
-        <Grid
-          maxWidth={"80%"}
-          container
-          rowSpacing={1}
-          columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-        >
+        <Box className="card-container">
           {cooSubCardData.map((data) => {
             return (
-              <Grid item md={4} sm={12}>
+              <Box>
                 <SubCard data={data} />
-              </Grid>
+              </Box>
             );
           })}
           {/* <Typography
@@ -162,7 +156,7 @@ const COO = () => {
             *Funding applicable to Finance Scale & Finance Pro Subscriptions
             only
           </Typography> */}
-        </Grid>
+        </Box>
       </Box>
 
       <Box className="section3">

@@ -78,7 +78,7 @@ const CSO = () => {
           <Grid className="section1-left" item xs={12} md={6}>
             <Box sx={{ maxWidth: "100%", paddingLeft: "1rem" }}>
               <Typography className="heading">
-                Meet <span className="special-text">Your CSO</span> Today
+                Meet <span className="special-text">Your CSO</span>
               </Typography>
               {/* <Typography className="heading">Today</Typography> */}
               <p className="sub-text">
@@ -93,7 +93,7 @@ const CSO = () => {
                   content={"Meet Your CSO"}
                   widget={
                     <iframe
-                      width="100%"
+                      width={isMobile ? "100%" : "500px"}
                       height="750px"
                       src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourcto"
                       frameborder="0"
@@ -113,7 +113,7 @@ const CSO = () => {
             </Box>
             <Box className="image-wrapper">
               <iframe
-                width="100%"
+                width={isMobile ? "100%" : "500px"}
                 height="750px"
                 src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourcso"
                 frameborder="0"

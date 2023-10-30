@@ -133,56 +133,47 @@ const CMO = () => {
           <span className="heading-special text-bold">Digital Marketing</span>{" "}
           Solutions Tailored To Your Needs
         </p>
-        <Grid
-          maxWidth={"80%"}
-          container
-          rowSpacing={1}
-          columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-        >
+        <Box className="card-container">
           {cmoSubCardData.map((data) => {
             return (
-              <Grid item md={4} sm={12}>
+              <Box>
                 <SubCard data={data} />
-              </Grid>
+              </Box>
             );
           })}
-          <Typography
-            sx={{
-              marginTop: "2rem",
-              width: "100%",
-              textAlign: "right",
-              fontWeight: "700",
-              fontSize: { xs: "0.6rem", md: "0.8rem" },
-              marginTop: { xs: "1rem", md: "1rem" },
-            }}
-            variant="caption"
-            display="block"
-            gutterBottom
-          >
-            *Funding applicable to Go Scale & Go Pro Subscriptions only
-          </Typography>
-          <Box className="subCard-button-wrapper">
-            <button className="subCard-button" onClick={scrollToTop}>
-              Meet Your CMO Today
-            </button>
-            <button
-              className="subCard-buttonOutlined"
-              onClick={handleClickOpen}
-            >
-              Apply For Your CMO Ad Funding
-            </button>
-          </Box>
-
-          {/* 
+        </Box>
+        <Typography
+          sx={{
+            marginTop: "2rem",
+            width: "73%",
+            textAlign: { xs: "center", md: "right" },
+            fontWeight: "700",
+            fontSize: { xs: "0.6rem", md: "0.8rem" },
+            marginTop: { xs: "1rem", md: "1rem" },
+          }}
+          variant="caption"
+          display="block"
+          gutterBottom
+        >
+          *Funding applicable to Go Scale & Go Pro Subscriptions only
+        </Typography>
+        <Box className="subCard-button-wrapper">
+          <button className="subCard-button" onClick={scrollToTop}>
+            Meet Your CMO Today
+          </button>
+          <button className="subCard-buttonOutlined" onClick={handleClickOpen}>
+            Apply For Your CMO Ad Funding
+          </button>
+        </Box>
+        {/* 
           <Typography className="sub-heading">
-            Not ready to dive into a full subscription? No worries!
+          Not ready to dive into a full subscription? No worries!
           </Typography>
           <Typography className="caption">
-            Customize a plan that perfectly aligns with your unique requirements
-            and budget. Connect with us today to turbocharge your marketing
-            endeavors.
-          </Typography> */}
-        </Grid>
+          Customize a plan that perfectly aligns with your unique requirements
+          and budget. Connect with us today to turbocharge your marketing
+          endeavors.
+        </Typography> */}
       </Box>
       <Box className="section6">
         <Typography className="heading">

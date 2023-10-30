@@ -74,7 +74,7 @@ const CFO = () => {
           <Grid className="section1-left" item xs={12} md={6}>
             <Box sx={{ maxWidth: "100%", paddingLeft: "1rem" }}>
               <Typography className="heading">
-                Meet <span className="special-text">Your CFO</span> Today
+                Meet <span className="special-text">Your CFO</span>
               </Typography>
               {/* <Typography className="heading">Today</Typography> */}
               <p className="sub-text">

@@ -29,7 +29,7 @@ import {
 import Crousel from "../../components/crousel/Crousel";
 import Imagecarousel from "../../components/testCrousel/ImageCarousel";
 import CarouselSlick from "../../components/carousel-slick/CarouselSlick";
-import calendarImage from "../../assets/cfoCalendarPic.svg";
+import calendarImage from "../../assets/CTO-Profile.svg";
 import { useEffect, useState } from "react";
 
 const CTO = () => {
@@ -80,7 +80,7 @@ const CTO = () => {
           <Grid className="section1-left" item xs={12} md={6}>
             <Box sx={{ maxWidth: "100%", paddingLeft: "1rem" }}>
               <Typography className="heading">
-                Meet <span className="special-text">Your CTO</span> Today
+                Meet <span className="special-text">Your CTO</span>
               </Typography>
               {/* <Typography className="heading">Today</Typography> */}
               <p className="sub-text">
@@ -135,17 +135,12 @@ const CTO = () => {
           Solutions tailored to your needs
           <br />
         </p>
-        <Grid
-          maxWidth={"80%"}
-          container
-          rowSpacing={1}
-          columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-        >
+        <Box className="card-container" maxWidth={"90%"}>
           {ctoSubCardData.map((data) => {
             return (
-              <Grid item md={4} sm={12}>
+              <Box>
                 <SubCard data={data} />
-              </Grid>
+              </Box>
             );
           })}
           {/* <Typography
@@ -164,7 +159,7 @@ const CTO = () => {
             *Funding applicable to Finance Scale & Finance Pro Subscriptions
             only
           </Typography> */}
-        </Grid>
+        </Box>
       </Box>
 
       <Box className="section3">

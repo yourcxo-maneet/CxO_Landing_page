@@ -111,7 +111,7 @@ function TTVfinal() {
             </Box>
             <Box className="image-wrapper">
               <iframe
-                width="100%"
+                width={isMobile ? "100%" : "500px"}
                 height="555px"
                 src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourcmo"
                 frameborder="0"
@@ -125,9 +125,9 @@ function TTVfinal() {
       </Box>
       <Box className="section2">
         <p className="heading">
-          We Deliver Cutting-Edge{" "}
-          <span className="heading-special text-bold">Digital Marketing</span>{" "}
-          Solutions Tailored To Your Needs
+          We Deliver{" "}
+          <span className="heading-special text-bold">Cutting-Edge</span>{" "}
+          Digital Marketing Solutions Tailored To Your Needs
         </p>
         <Grid
           maxWidth={"80%"}
@@ -256,7 +256,8 @@ function TTVfinal() {
                   {" "}
                   <iframe
                     frameborder="0"
-                    style={{ height: "760px", width: "500px", border: "none" }}
+                    width={isMobile ? "100%" : "500px"}
+                    style={{ height: "760px", border: "none" }}
                     src="https://forms.zohopublic.in/yourcxoonline/form/AdFundApplication/formperma/NA8G68NnhgfIRQZ4GHM7gf4p3d3s1BmxBB7gN4z7qqE"
                   ></iframe>
                 </DialogContentText>

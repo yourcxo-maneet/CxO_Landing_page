@@ -8,19 +8,20 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import React, { useState } from "react";
 import "./card.css";
+import { useNavigate } from "react-router-dom";
 
 const CxoCard = ({ data }) => {
   const [open, setOpen] = useState(false);
   const theme = useTheme();
   const fullScreen = useMediaQuery(theme.breakpoints.down("lg"));
 
-  const handleClickOpen = () => {
-    setOpen(true);
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    navigate(`../${data.page}`);
   };
 
-  const handleClose = () => {
-    setOpen(false);
-  };
   return (
     <Box className="cxoCard-wrapper">
       <Box
@@ -40,25 +41,9 @@ const CxoCard = ({ data }) => {
         >
           {data.description}
         </Typography>
-        <Button variant="outlined" className="button" onClick={handleClickOpen}>
+        <Button variant="outlined" className="button" onClick={handleClick}>
           Meet Your {data.title}
         </Button>
-        <Dialog
-          fullScreen={fullScreen}
-          open={open}
-          onClose={handleClose}
-          aria-labelledby="responsive-dialog-title"
-        >
-          <DialogTitle id="responsive-dialog-title"></DialogTitle>
-          <DialogContent>
-            <DialogContentText>{data.widget}</DialogContentText>
-          </DialogContent>
-          <DialogActions>
-            <Button autoFocus onClick={handleClose}>
-              Close
-            </Button>
-          </DialogActions>
-        </Dialog>
       </Box>
     </Box>
   );

@@ -1,4 +1,4 @@
-.App-carousel {
+/* .App-carousel {
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
@@ -49,4 +49,31 @@
     background: var(--White, #f6f6f5);
     box-shadow: #eea81e 0px 0px 1px 3px !important;
   }
+} */
+.slider-plancard {
+  width: 90%;
+  margin: 0 auto;
+}
+.crousel-slider .slick-slide {
+  display: flex !important;
+  justify-content: center !important;
+}
+.crousel-slider .slick-prev {
+  width: 35px;
+  height: 35px;
+  z-index: 1000;
+  color: #eea81e !important;
+  background-color: #302e29 !important;
+  left: -5%;
+}
+.crousel-slider .slick-next {
+  width: 35px;
+  height: 35px;
+  z-index: 1000;
+  color: #eea81e !important;
+  background-color: #302e29 !important;
+  right: -5%;
+}
+.slick-slider .slick-list .slick-track {
+  padding: 2rem 0px;
 }

@@ -325,101 +325,41 @@ export const CxoCardData = [
   {
     image: ctoImage,
     title: "CTO",
-    widget: (
-      <iframe
-        width="100%"
-        height="750px"
-        src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourcto"
-        frameborder="0"
-        allowfullscreen=""
-      >
-        {" "}
-      </iframe>
-    ),
+    page: "meetyourcto",
     description:
       "Innovate fearlessly with our cutting-edge technological solutions.",
   },
   {
     image: chroImage,
     title: "CHRO",
-    widget: (
-      <iframe
-        width="100%"
-        height="750px"
-        src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourchro"
-        frameborder="0"
-        allowfullscreen=""
-      >
-        {" "}
-      </iframe>
-    ),
+    page: "meetyourchro",
     description:
       "Nurture your most valuable asset, your team, with our HR expertise.",
   },
   {
     image: cfoImage,
     title: "CFO",
-    widget: (
-      <iframe
-        width="100%"
-        height="750px"
-        src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourcfo"
-        frameborder="0"
-        allowfullscreen=""
-      >
-        {" "}
-      </iframe>
-    ),
+    page: "meetyourcfo",
     description:
       "Secure your financial future with our expert fiscal management.",
   },
   {
     image: csoImage,
     title: "CSO",
-    widget: (
-      <iframe
-        width="100%"
-        height="750px"
-        src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourcso"
-        frameborder="0"
-        allowfullscreen=""
-      >
-        {" "}
-      </iframe>
-    ),
+    page: "meetyourcso",
     description:
       "Navigate your business journey with our insightful strategy guidance.",
   },
   {
     image: cooImage,
     title: "COO",
-    widget: (
-      <iframe
-        width="100%"
-        height="750px"
-        src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourcfo"
-        frameborder="0"
-        allowfullscreen=""
-      >
-        {" "}
-      </iframe>
-    ),
+    page: "/",
     description: "Let us handle your project management & operations for you!",
   },
   {
     image: cmoImage,
     title: "CMO",
-    widget: (
-      <iframe
-        width="100%"
-        height="750px"
-        src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourcmo"
-        frameborder="0"
-        allowfullscreen=""
-      >
-        {" "}
-      </iframe>
-    ),
+    page: "meetyourcmo",
     description: "Let us handle your marketing and finance your ads for you!",
   },
 ];

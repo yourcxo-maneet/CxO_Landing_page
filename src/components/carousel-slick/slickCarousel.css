@@ -1,11 +1,8 @@
 .slick-arrow {
-  display: flex;
   width: 48px;
   height: 48px;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background-color: blueviolet;
+  background-color: rgb(151, 83, 215);
   gap: 8px;
   flex-shrink: 0;
 }
@@ -16,7 +13,7 @@
   padding: 2rem 0px;
   align-items: center;
 }
-.slick-slider .slick-prev {
+.cxoCard-slider .slick-prev {
   width: 35px;
   height: 35px;
   z-index: 1000;
@@ -24,17 +21,17 @@
   background-color: #302e29 !important;
   left: -4%;
 }
-.slick-slider .slick-next {
+.cxoCard-slider .slick-next {
   width: 35px;
   height: 35px;
   z-index: 1000;
   color: #eea81e !important;
   background-color: #302e29 !important;
-  right: -4.4%;
+  right: -4%;
 }
 
 @media (max-width: 1400px) {
-  .slick-slider .slick-list .slick-track {
+  .cxoCard-slider .slick-list .slick-track {
     gap: 67px !important;
   }
 }
@@ -42,19 +39,19 @@
   .slick-dots {
     padding: 3.5rem 0 !important;
   }
-  .slick-slider .slick-list .slick-track {
+  .cxoCard-slider .slick-list .slick-track {
     margin-bottom: 2rem;
     padding: 4rem 0px;
   }
-  .slick-track {
+  .cxoCard-slider .slick-track {
     width: 2310px !important;
   }
-  .slick-slider .slick-prev {
+  .cxoCard-slider.slick-prev {
     color: #eea81e !important;
     background-color: #302e29 !important;
     left: 0;
   }
-  .slick-slider .slick-next {
+  .cxoCard-slider .slick-next {
     color: #eea81e !important;
     background-color: #302e29 !important;
     right: 0;
