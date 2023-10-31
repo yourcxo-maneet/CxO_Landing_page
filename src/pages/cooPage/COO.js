@@ -30,11 +30,20 @@ import Crousel from "../../components/crousel/Crousel";
 import Imagecarousel from "../../components/testCrousel/ImageCarousel";
 import CarouselSlick from "../../components/carousel-slick/CarouselSlick";
 import calendarImage from "../../assets/COO_profile.svg";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import SubCardCarousel from "../../components/subcard-carousel/SubCardCarousel";
 
 const COO = () => {
   const [open, setOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+
+  const section2Ref = useRef(null);
+
+  // Function to scroll to the section2 element
+  const scrollToSection2 = () => {
+    console.log("sddsfds");
+    section2Ref.current.scrollIntoView({ behavior: "smooth" });
+  };
 
   useEffect(() => {
     // Function to update isMobile state
@@ -92,17 +101,7 @@ const COO = () => {
               <Box className="section1-buttons">
                 <SolidButton
                   content={"Meet Your COO"}
-                  widget={
-                    <iframe
-                      width={isMobile ? "100%" : "500px"}
-                      height="750px"
-                      src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourcto"
-                      frameborder="0"
-                      allowfullscreen=""
-                    >
-                      {" "}
-                    </iframe>
-                  }
+                  clickScroll={scrollToSection2}
                 />
               </Box>
             </Box>
@@ -126,37 +125,24 @@ const COO = () => {
           </Grid>
         </Grid>
       </Box>
-      <Box className="section2">
+      <Box className="section2" ref={section2Ref}>
         <p className="heading">
           We deliver
           <span className="heading-special">Streamlined Operations</span>
           tailored to your needs
         </p>
         <Box className="card-container">
-          {cooSubCardData.map((data) => {
-            return (
-              <Box>
-                <SubCard data={data} />
-              </Box>
-            );
-          })}
-          {/* <Typography
-            sx={{
-              marginTop: "2rem",
-              width: "100%",
-              textAlign: "right",
-              fontWeight: "700",
-              fontSize: { xs: "0.6rem", md: "0.8rem" },
-              marginTop: { xs: "1rem", md: "1rem" },
-            }}
-            variant="caption"
-            display="block"
-            gutterBottom
-          >
-            *Funding applicable to Finance Scale & Finance Pro Subscriptions
-            only
-          </Typography> */}
+          {isMobile ? (
+            <SubCardCarousel data={cooSubCardData} />
+          ) : (
+            <Box className="card-row">
+              {cooSubCardData.map((data) => {
+                return <SubCard data={data} />;
+              })}
+            </Box>
+          )}
         </Box>
+        {/* <SubCardCarousel data={cooSubCardData} /> */}
       </Box>
 
       <Box className="section3">
@@ -166,9 +152,8 @@ const COO = () => {
               Do you want to start small ? No worries!
             </Typography>
             <Typography className="caption">
-              Customize a plan that directly aligns with your objectives,
-              <br />
-              connect with us today.
+              Customize a plan that directly aligns with your objectives, &
+              capture markets!
             </Typography>
           </Box>
           <Box className="section3-subButton">

@@ -29,11 +29,20 @@ import {
 import Crousel from "../../components/crousel/Crousel";
 import Imagecarousel from "../../components/testCrousel/ImageCarousel";
 import CarouselSlick from "../../components/carousel-slick/CarouselSlick";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import SubCardCarousel from "../../components/subcard-carousel/SubCardCarousel";
 
 const CMO = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [open, setOpen] = useState(false);
+
+  const section2Ref = useRef(null);
+
+  // Function to scroll to the section2 element
+  const scrollToSection2 = () => {
+    console.log("sddsfds");
+    section2Ref.current.scrollIntoView({ behavior: "smooth" });
+  };
 
   useEffect(() => {
     // Function to update isMobile state
@@ -88,7 +97,7 @@ const CMO = () => {
                 your <span className="bold-text"> marketing strategy </span>with
                 <span className="bold-text"> our subscription services</span>,
                 tailored to elevate your brand's reach and impact. Leverage Your
-                CMO ad funding to elevate your brand
+                CMO ad funding to elevate your brand.
               </p>
               <Box className="section1-buttons">
                 <SolidButton
@@ -127,25 +136,27 @@ const CMO = () => {
           </Grid>
         </Grid>
       </Box>
-      <Box className="section2">
+      <Box className="section2" ref={section2Ref}>
         <p className="heading">
           We Deliver Cutting-Edge{" "}
           <span className="heading-special text-bold">Digital Marketing</span>{" "}
           Solutions Tailored To Your Needs
         </p>
         <Box className="card-container">
-          {cmoSubCardData.map((data) => {
-            return (
-              <Box>
-                <SubCard data={data} />
-              </Box>
-            );
-          })}
+          {isMobile ? (
+            <SubCardCarousel data={cmoSubCardData} />
+          ) : (
+            <Box className="card-row">
+              {cmoSubCardData.map((data) => {
+                return <SubCard data={data} />;
+              })}
+            </Box>
+          )}
         </Box>
         <Typography
           sx={{
             marginTop: "2rem",
-            width: "73%",
+            width: "80%",
             textAlign: { xs: "center", md: "right" },
             fontWeight: "700",
             fontSize: { xs: "0.6rem", md: "0.8rem" },
@@ -161,9 +172,9 @@ const CMO = () => {
           <button className="subCard-button" onClick={scrollToTop}>
             Meet Your CMO Today
           </button>
-          <button className="subCard-buttonOutlined" onClick={handleClickOpen}>
+          {/* <button className="subCard-buttonOutlined" onClick={handleClickOpen}>
             Apply For Your CMO Ad Funding
-          </button>
+          </button> */}
         </Box>
         {/* 
           <Typography className="sub-heading">
@@ -216,8 +227,7 @@ const CMO = () => {
             </Typography>
             <Typography className="caption">
               Customize a plan that directly aligns with your objectives,
-              <br />
-              connect with us today.
+              <br />& capture markets!
             </Typography>
           </Box>
           <Box className="section3-subButton">

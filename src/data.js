@@ -53,7 +53,7 @@ export const subCardData = [
       "Influencer Partnership",
       "Brand Consulting",
       "Lead (MQL) Management",
-      "Virtual Assit & Spot Hiring",
+      "Virtual Assist & Spot Hiring",
     ],
   },
 ];
@@ -103,7 +103,7 @@ export const cmoSubCardData = [
       "Influencer Partnership",
       "Brand Consulting",
       "Lead (MQL) Management",
-      "Virtual Assit & Spot Hiring",
+      "Virtual Assist & Spot Hiring",
     ],
   },
 ];
@@ -728,7 +728,7 @@ export const ctoPlanCardData = [
     title: "Build a Marketplace",
     price: "5500",
     features: [
-      "Amazon/Flipkart/Alibaba/Walmart Setup (Any 1)",
+      `Amazon/Flipkart/Alibaba${"  "}/Walmart Setup (Any 1)`,
       "Logo & Brand Book",
       "Catalogue/Product Management",
       "Chatbot Integration",

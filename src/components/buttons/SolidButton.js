@@ -9,7 +9,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import { useState } from "react";
 
-const SolidButton = ({ content, widget }) => {
+const SolidButton = ({ content, widget, clickScroll }) => {
   const [open, setOpen] = useState(false);
   const theme = useTheme();
   const fullScreen = useMediaQuery(theme.breakpoints.down("lg"));
@@ -23,25 +23,31 @@ const SolidButton = ({ content, widget }) => {
   };
   return (
     <>
-      <button className="solidbutton" type="button" onClick={handleClickOpen}>
+      <button
+        className="solidbutton"
+        type="button"
+        onClick={widget ? handleClickOpen : clickScroll}
+      >
         {content}
       </button>
-      <Dialog
-        fullScreen={fullScreen}
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="responsive-dialog-title"
-      >
-        <DialogTitle id="responsive-dialog-title"></DialogTitle>
-        <DialogContent>
-          <DialogContentText>{widget}</DialogContentText>
-        </DialogContent>
-        <DialogActions>
-          <Button autoFocus onClick={handleClose}>
-            Close
-          </Button>
-        </DialogActions>
-      </Dialog>
+      {widget ? (
+        <Dialog
+          fullScreen={fullScreen}
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="responsive-dialog-title"
+        >
+          <DialogTitle id="responsive-dialog-title"></DialogTitle>
+          <DialogContent>
+            <DialogContentText>{widget}</DialogContentText>
+          </DialogContent>
+          <DialogActions>
+            <Button autoFocus onClick={handleClose}>
+              Close
+            </Button>
+          </DialogActions>
+        </Dialog>
+      ) : null}
     </>
   );
 };

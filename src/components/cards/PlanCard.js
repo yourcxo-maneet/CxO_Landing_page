@@ -34,7 +34,7 @@ const PlanCard = ({ data }) => {
                   fontWeight: "bold",
                   textAlign: "center",
                   marginBottom: "10px",
-                  fontSize: { xs: "0.8rem", md: "1rem", lg: "1rem" },
+                  fontSize: { xs: "0.8rem", md: "0.9rem", lg: "0.9rem" },
                 }}
                 variant="body1"
               >
@@ -46,7 +46,7 @@ const PlanCard = ({ data }) => {
             <Box sx={{ textAlign: "center" }}>
               <Typography
                 sx={{
-                  fontSize: { md: "24px", lg: "26px", xs: "30px" },
+                  fontSize: { md: "22px", lg: "26px", xs: "30px", sm: "28px" },
                   fontWeight: "500",
                   color: "rgba(238, 169, 31, 1)",
                 }}
@@ -78,12 +78,6 @@ const PlanCard = ({ data }) => {
             </Box>
           ))}
         </Box>
-        <Typography
-          sx={{ marginTop: "2px" }}
-          variant="caption"
-          display="block"
-          gutterBottom
-        ></Typography>
       </Box>
     </div>
   );

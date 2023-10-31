@@ -66,8 +66,14 @@
   align-items: center;
 }
 .section2 .card-container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.section2 .card-container .card-row {
   display: flex;
   gap: 20px;
+  justify-content: space-between;
+  align-items: center;
 }
 .section2 .heading {
   font-family: Montserrat;
@@ -283,7 +289,7 @@
   }
 
   .section1 .section1-left {
-    order: 1;
+    order: -1;
   }
   .section1 .sub-text {
     padding-right: 0px;
@@ -322,6 +328,9 @@
   .section2 .card-container {
     display: flex;
     gap: 20px;
+    flex-direction: column;
+  }
+  .section2 .card-container .card-row {
     flex-direction: column;
   }
   .subCard-button {

@@ -19,6 +19,7 @@ import CxoCard from "../../components/cards/CxoCard";
 import Footer from "../../components/footer/Footer";
 import {
   cmoPlanCardData,
+  cmoSubCardData,
   cxoCardData,
   planCardData,
   subCardData,
@@ -26,11 +27,20 @@ import {
 import Crousel from "../../components/crousel/Crousel";
 import Imagecarousel from "../../components/testCrousel/ImageCarousel";
 import CarouselSlick from "../../components/carousel-slick/CarouselSlick";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import SubCardCarousel from "../../components/subcard-carousel/SubCardCarousel";
 function TTVfinal() {
   const item = [1, 2, 3, 4, 5, 6, 7, 87];
   const [isMobile, setIsMobile] = useState(false);
   const [open, setOpen] = useState(false);
+
+  const section2Ref = useRef(null);
+
+  // Function to scroll to the section2 element
+  const scrollToSection2 = () => {
+    console.log("sddsfds");
+    section2Ref.current.scrollIntoView({ behavior: "smooth" });
+  };
 
   useEffect(() => {
     // Function to update isMobile state
@@ -84,23 +94,13 @@ function TTVfinal() {
                 your <span className="bold-text"> marketing strategy </span>with
                 <span className="bold-text"> our subscription services</span>,
                 tailored to elevate your brand's reach and impact. Leverage Your
-                CMO ad funding to elevate your brand
+                CMO ad funding to elevate your brand.
               </p>
             </Box>
             <Box className="section1-buttons">
               <SolidButton
                 content={"Get Your Ads Funded"}
-                widget={
-                  <iframe
-                    frameborder="0"
-                    style={{
-                      height: "760px",
-                      width: isMobile ? "100%" : "500px",
-                      border: "none",
-                    }}
-                    src="https://forms.zohopublic.in/yourcxoonline/form/AdFundApplication/formperma/NA8G68NnhgfIRQZ4GHM7gf4p3d3s1BmxBB7gN4z7qqE"
-                  ></iframe>
-                }
+                clickScroll={scrollToSection2}
               />
             </Box>
           </Grid>
@@ -123,13 +123,13 @@ function TTVfinal() {
           </Grid>
         </Grid>
       </Box>
-      <Box className="section2">
+      <Box className="section2" ref={section2Ref}>
         <p className="heading">
           We Deliver{" "}
           <span className="heading-special text-bold">Cutting-Edge</span>{" "}
           Digital Marketing Solutions Tailored To Your Needs
         </p>
-        <Grid
+        {/* <Grid
           maxWidth={"80%"}
           container
           rowSpacing={1}
@@ -175,7 +175,43 @@ function TTVfinal() {
               Apply For Your CMO Ad Funding
             </button>
           </Box>
-        </Grid>
+        </Grid> */}
+
+        <Box className="card-container">
+          {isMobile ? (
+            <SubCardCarousel data={cmoSubCardData} />
+          ) : (
+            <Box className="card-row">
+              {cmoSubCardData.map((data) => {
+                return <SubCard data={data} />;
+              })}
+            </Box>
+          )}
+        </Box>
+        <Typography
+          sx={{
+            marginTop: "2rem",
+            width: "80%",
+            textAlign: { xs: "center", md: "right" },
+            fontWeight: "700",
+            fontSize: { xs: "0.6rem", md: "0.8rem" },
+            marginTop: { xs: "1rem", md: "1rem" },
+          }}
+          variant="caption"
+          display="block"
+          gutterBottom
+        >
+          *Funding applicable to Go Scale & Go Pro Subscriptions only
+        </Typography>
+
+        <Box className="subCard-button-wrapper">
+          <button className="subCard-button" onClick={scrollToTop}>
+            Meet Your CMO Today
+          </button>
+          <button className="subCard-buttonOutlined" onClick={handleClickOpen}>
+            Apply For Your CMO Ad Funding
+          </button>
+        </Box>
       </Box>
 
       <Box className="section3">
@@ -185,8 +221,8 @@ function TTVfinal() {
               Do you want to start small ? No worries!
             </Typography>
             <Typography className="caption">
-              Customize a plan that directly aligns with your objectives,
-              connect with us today.
+              Customize a plan that directly aligns with your objectives, &
+              capture markets!
             </Typography>
           </Box>
           <Box className="section3-subButton">

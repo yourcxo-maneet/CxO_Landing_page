@@ -28,11 +28,20 @@ import Crousel from "../../components/crousel/Crousel";
 import Imagecarousel from "../../components/testCrousel/ImageCarousel";
 import CarouselSlick from "../../components/carousel-slick/CarouselSlick";
 import calendarImage from "../../assets/cfoCalendarPic.svg";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import SubCardCarousel from "../../components/subcard-carousel/SubCardCarousel";
 
 const CSO = () => {
   const [open, setOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+
+  const section2Ref = useRef(null);
+
+  // Function to scroll to the section2 element
+  const scrollToSection2 = () => {
+    console.log("sddsfds");
+    section2Ref.current.scrollIntoView({ behavior: "smooth" });
+  };
 
   useEffect(() => {
     // Function to update isMobile state
@@ -83,7 +92,7 @@ const CSO = () => {
               {/* <Typography className="heading">Today</Typography> */}
               <p className="sub-text">
                 Empower your{" "}
-                <span className="bold-text">business strategy </span> nd for
+                <span className="bold-text">business strategy </span> and for
                 growth and innovation through our{" "}
                 <span className="bold-text">CSO subscription services, </span>{" "}
                 your path to sustainable success.
@@ -91,17 +100,7 @@ const CSO = () => {
               <Box className="section1-buttons">
                 <SolidButton
                   content={"Meet Your CSO"}
-                  widget={
-                    <iframe
-                      width={isMobile ? "100%" : "500px"}
-                      height="750px"
-                      src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourcto"
-                      frameborder="0"
-                      allowfullscreen=""
-                    >
-                      {" "}
-                    </iframe>
-                  }
+                  clickScroll={scrollToSection2}
                 />
               </Box>
             </Box>
@@ -125,42 +124,23 @@ const CSO = () => {
           </Grid>
         </Grid>
       </Box>
-      <Box className="section2">
+      <Box className="section2" ref={section2Ref}>
         <p className="heading">
           We deliver<span className="heading-special">Innovative</span> Strategy
           Solutions tailored to your needs
           <br />
         </p>
-        <Grid
-          maxWidth={"80%"}
-          container
-          rowSpacing={1}
-          columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-        >
-          {csoSubCardData.map((data) => {
-            return (
-              <Grid item md={4} sm={12}>
-                <SubCard data={data} />
-              </Grid>
-            );
-          })}
-          {/* <Typography
-            sx={{
-              marginTop: "2rem",
-              width: "100%",
-              textAlign: "right",
-              fontWeight: "700",
-              fontSize: { xs: "0.6rem", md: "0.8rem" },
-              marginTop: { xs: "1rem", md: "1rem" },
-            }}
-            variant="caption"
-            display="block"
-            gutterBottom
-          >
-            *Funding applicable to Finance Scale & Finance Pro Subscriptions
-            only
-          </Typography> */}
-        </Grid>
+        <Box className="card-container">
+          {isMobile ? (
+            <SubCardCarousel data={csoSubCardData} />
+          ) : (
+            <Box className="card-row">
+              {csoSubCardData.map((data) => {
+                return <SubCard data={data} />;
+              })}
+            </Box>
+          )}
+        </Box>
       </Box>
 
       <Box className="section3">
@@ -170,9 +150,8 @@ const CSO = () => {
               Do you want to start small ? No worries!
             </Typography>
             <Typography className="caption">
-              Customize a plan that directly aligns with your objectives,
-              <br />
-              connect with us today.
+              Customize a plan that directly aligns with your objectives, &
+              capture markets!
             </Typography>
           </Box>
           <Box className="section3-subButton">

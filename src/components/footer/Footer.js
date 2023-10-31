@@ -42,7 +42,11 @@ const Footer = () => {
           </Box>
           <Box className="footer-upper-left-details">
             <LanguageIcon />
-            <a href="https://www.yourcxo.online/" style={{ color: "#ffffff" }}>
+            <a
+              href="https://www.yourcxo.online/"
+              style={{ color: "#ffffff" }}
+              target="_blank"
+            >
               <Typography>www.yourcxo.online</Typography>
             </a>
           </Box>

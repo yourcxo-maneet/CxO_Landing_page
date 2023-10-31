@@ -6,18 +6,13 @@ import CxoCard from "../cards/CxoCard";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import PlanCard from "../cards/PlanCard";
-function Crousel() {
+function Crousel({ data, Card }) {
   var settings = {
     className: "crousel-slider",
     dots: false,
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
-    speed: 4000,
-    autoplaySpeed: 4000,
-    initialSlide: 0,
-    pauseOnHover: true,
     prevArrow: (
       <ArrowBackIcon
         className="slick-arrow"
@@ -54,12 +49,10 @@ function Crousel() {
     ),
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1200,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
-          infinite: true,
-          autoplay: true,
         },
       },
       {
@@ -68,8 +61,6 @@ function Crousel() {
           slidesToShow: 2,
           slidesToScroll: 2,
           initialSlide: 1,
-          infinite: true,
-          autoplay: true,
         },
       },
       {
@@ -77,8 +68,6 @@ function Crousel() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          infinite: true,
-          autoplay: true,
         },
       },
     ],
@@ -87,9 +76,9 @@ function Crousel() {
   return (
     <div className="slider-plancard">
       <Slider {...settings}>
-        {cmoPlanCardData.map((data) => (
+        {data.map((data) => (
           <div>
-            <PlanCard data={data} />
+            <Card data={data} />
           </div>
         ))}
       </Slider>

@@ -3,10 +3,8 @@
 }
 .card-wrapper {
   flex: 1;
-  width: 340px;
-  height: auto;
-  align-self: normal;
-  flex-wrap: wrap;
+  height: 90%;
+  width: 300px;
   margin: 0 auto;
   border-radius: 12px;
   background: #fefffe;
@@ -15,37 +13,45 @@
 
   /* box-shadow: -1px 4px 14px 0px rgba(0, 0, 0, 0.05) inset; */
 }
-.card-wrapper .card {
+.card {
+  flex: 1 1 21rem;
+  flex-wrap: wrap;
+  align-self: normal;
   padding: 2rem;
+  border-radius: 12px;
+  background: #fefffe;
+  border: 0.5px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
 }
 
-.card-wrapper .card-upper .card-upper-1 {
+.card .card-upper .card-upper-1 {
   display: flex;
   align-items: center;
 }
-.card-wrapper .card-upper {
+.card .card-upper {
   padding-bottom: 2rem;
 }
-.card-wrapper .card-lower_wrapper {
+.card .card-lower_wrapper {
   margin-top: 1rem;
 }
 .card-lower_right {
   font-size: 15px;
 }
 .add-on {
+  text-align: center;
   margin: 0.5rem;
   font-size: 18px;
 }
 .add-on-bold {
   font-weight: bold;
 }
-.card-wrapper .card-upper .card-upper-1 .card-upper-1_box {
+.card .card-upper .card-upper-1 .card-upper-1_box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 1rem;
 }
-.card-wrapper .card-lower {
+.card .card-lower {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -78,14 +84,14 @@
   margin-left: 1rem;
 }
 
-.card-wrapper .card-upper .card-upper-2 {
+.card .card-upper .card-upper-2 {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 1rem;
 }
 
-.card-wrapper .card-lower_wrapper {
+.card .card-lower_wrapper {
   margin-top: 1rem;
 }
 
@@ -177,7 +183,7 @@
   }
   .card-wrapper .card {
     flex: 1;
-    padding: 1.5rem;
+    padding: 1rem;
   }
   .card-wrapper .card-lower_right {
     font-size: 14px;

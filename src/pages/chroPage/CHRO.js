@@ -27,6 +27,7 @@ import Imagecarousel from "../../components/testCrousel/ImageCarousel";
 import CarouselSlick from "../../components/carousel-slick/CarouselSlick";
 import calendarImage from "../../assets/cfoCalendarPic.svg";
 import { useEffect, useState } from "react";
+import SubCardCarousel from "../../components/subcard-carousel/SubCardCarousel";
 
 const CHRO = () => {
   const [open, setOpen] = useState(false);
@@ -128,36 +129,17 @@ const CHRO = () => {
           We deliver <span className="heading-special">Comprehensive</span> HR
           Solutions tailored to your needs <br />
         </p>
-        <Grid
-          maxWidth={"80%"}
-          container
-          rowSpacing={1}
-          columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-        >
-          {chroSubCardData.map((data) => {
-            return (
-              <Grid item md={4} sm={12}>
-                <SubCard data={data} />
-              </Grid>
-            );
-          })}
-          {/* <Typography
-            sx={{
-              marginTop: "2rem",
-              width: "100%",
-              textAlign: "right",
-              fontWeight: "700",
-              fontSize: { xs: "0.6rem", md: "0.8rem" },
-              marginTop: { xs: "1rem", md: "1rem" },
-            }}
-            variant="caption"
-            display="block"
-            gutterBottom
-          >
-            *Funding applicable to Finance Scale & Finance Pro Subscriptions
-            only
-          </Typography> */}
-        </Grid>
+        <Box className="card-container">
+          {isMobile ? (
+            <SubCardCarousel data={chroSubCardData} />
+          ) : (
+            <Box className="card-row">
+              {chroSubCardData.map((data) => {
+                return <SubCard data={data} />;
+              })}
+            </Box>
+          )}
+        </Box>
       </Box>
 
       <Box className="section3">

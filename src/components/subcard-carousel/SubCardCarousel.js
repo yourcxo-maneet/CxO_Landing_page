@@ -1,13 +1,43 @@
+// import React from "react";
+// import "./subCardCarousel.css";
+// import Slider from "react-slick";
+// import { CxoCardData, cmoPlanCardData, planCardData } from "../../data.js";
+// import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+// import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+// import SubCard from "../cards/SubCard";
+// import Carousel from "react-elastic-carousel";
+
+// const SubCardCarousel = ({ data }) => {
+//   const breakPoints = [
+//     { width: 1, itemsToShow: 1 },
+//     { width: 550, itemsToShow: 1, itemsToScroll: 1 },
+//     { width: 768, itemsToShow: 4 },
+//     { width: 1200, itemsToShow: 4, itemsToScroll: 4 },
+//   ];
+//   return (
+//     <div className="App-carousel">
+//       <div className="carousel-wrapper">
+//         <Carousel breakPoints={breakPoints}>
+//           {data.map((item, index) => (
+//             <SubCard key={index} data={item} />
+//           ))}
+//         </Carousel>
+//       </div>
+//     </div>
+//   );
+// };
+// export default SubCardCarousel;
 import React from "react";
 import Slider from "react-slick";
-import "./slickCarousel.css";
-import { CxoCardData } from "../../data.js";
+import { CxoCardData, cmoSubCardData, cxoCardData } from "../../data";
 import CxoCard from "../cards/CxoCard";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-function CarouselSlick() {
+import SubCard from "../cards/SubCard";
+import "./subCardCarousel.css";
+function SubCardCarousel({ data }) {
   var settings = {
-    className: "cxoCard-slider",
+    className: "subcard-slider",
     dots: false,
     infinite: true,
     slidesToShow: 3,
@@ -50,8 +80,9 @@ function CarouselSlick() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
         },
       },
       {
@@ -59,6 +90,7 @@ function CarouselSlick() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          initialSlide: 1,
         },
       },
       {
@@ -74,14 +106,12 @@ function CarouselSlick() {
   return (
     <div>
       <Slider {...settings}>
-        {CxoCardData.map((data) => (
-          <div>
-            <CxoCard data={data} />
-          </div>
+        {data.map((data) => (
+          <SubCard data={data} />
         ))}
       </Slider>
     </div>
   );
 }
 
-export default CarouselSlick;
+export default SubCardCarousel;

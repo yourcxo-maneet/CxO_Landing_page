@@ -12,11 +12,6 @@ function ImageCarousel() {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 2000,
-    initialSlide: 0,
-    pauseOnHover: true,
     prevArrow: (
       <ArrowBackIcon
         className="slick-arrow"
@@ -58,7 +53,6 @@ function ImageCarousel() {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true,
         },
       },
       {
