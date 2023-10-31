@@ -100,7 +100,14 @@ function TTVfinal() {
             <Box className="section1-buttons">
               <SolidButton
                 content={"Get Your Ads Funded"}
-                clickScroll={scrollToSection2}
+                widget={
+                  <iframe
+                    frameborder="0"
+                    width={isMobile ? "100%" : "500px"}
+                    style={{ height: "760px", border: "none" }}
+                    src="https://forms.zohopublic.in/yourcxoonline/form/AdFundApplication/formperma/NA8G68NnhgfIRQZ4GHM7gf4p3d3s1BmxBB7gN4z7qqE"
+                  ></iframe>
+                }
               />
             </Box>
           </Grid>

@@ -25,7 +25,6 @@ const SubCard = ({ data }) => {
           </Box>
         </Box>
         <Box className="card-upper-2">
-          <img src="/images/sub_1.png" alt="" />
           <Box sx={{ textAlign: "center" }}>
             <Typography
               sx={{

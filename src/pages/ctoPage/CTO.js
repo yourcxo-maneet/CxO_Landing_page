@@ -103,7 +103,18 @@ const CTO = () => {
               <Box className="section1-buttons">
                 <SolidButton
                   content={"Meet Your CTO"}
-                  clickScroll={scrollToSection2}
+                  //   clickScroll={scrollToSection2}
+                  widget={
+                    <iframe
+                      width={isMobile ? "100%" : "500px"}
+                      height="750px"
+                      src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourcto"
+                      frameborder="0"
+                      allowfullscreen=""
+                    >
+                      {" "}
+                    </iframe>
+                  }
                 />
               </Box>
             </Box>

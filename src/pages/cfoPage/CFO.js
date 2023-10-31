@@ -24,12 +24,19 @@ import Crousel from "../../components/crousel/Crousel";
 import Imagecarousel from "../../components/testCrousel/ImageCarousel";
 import CarouselSlick from "../../components/carousel-slick/CarouselSlick";
 import calendarImage from "../../assets/cfoCalendarPic.svg";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import SubCardCarousel from "../../components/subcard-carousel/SubCardCarousel";
 
 const CFO = () => {
   const [open, setOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const section2Ref = useRef(null);
+
+  // Function to scroll to the section2 element
+  const scrollToSection2 = () => {
+    console.log("sddsfds");
+    section2Ref.current.scrollIntoView({ behavior: "smooth" });
+  };
 
   useEffect(() => {
     // Function to update isMobile state
@@ -90,9 +97,9 @@ const CFO = () => {
                   content={"Meet Your CFO"}
                   widget={
                     <iframe
-                      width="100%"
+                      width={isMobile ? "100%" : "500px"}
                       height="750px"
-                      src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourcto"
+                      src="https://zoho-karan12.zohobookings.in/portal-embed#/customer/meetyourcfo"
                       frameborder="0"
                       allowfullscreen=""
                     >
@@ -122,7 +129,7 @@ const CFO = () => {
           </Grid>
         </Grid>
       </Box>
-      <Box className="section2">
+      <Box className="section2" ref={section2Ref}>
         <p className="heading">
           We deliver <span className="heading-special">Data-driven</span>{" "}
           Financial solutions tailored to your needs
