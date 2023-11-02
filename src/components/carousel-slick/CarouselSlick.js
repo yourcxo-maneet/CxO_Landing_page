@@ -5,7 +5,7 @@ import { CxoCardData } from "../../data.js";
 import CxoCard from "../cards/CxoCard";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-function CarouselSlick() {
+function CarouselSlick({ data }) {
   var settings = {
     className: "cxoCard-slider",
     dots: false,
@@ -74,7 +74,7 @@ function CarouselSlick() {
   return (
     <div>
       <Slider {...settings}>
-        {CxoCardData.map((data) => (
+        {data.map((data) => (
           <div>
             <CxoCard data={data} />
           </div>

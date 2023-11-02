@@ -13,6 +13,7 @@ import Footer from "../../components/footer/Footer";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import {
+  CsoCardData,
   cfoPlanCardData,
   cfoSubCardData,
   chroPlanCardData,
@@ -201,14 +202,14 @@ const CSO = () => {
         <Box className="cxo-card">
           {isMobile ? null : (
             <Box sx={{ width: "90%", margin: "0 auto" }}>
-              <CarouselSlick />
+              <CarouselSlick data={CsoCardData} />
             </Box>
           )}
           {/* <Box sx={{ width: "90%", margin: "0 auto" }}>
             <CarouselSlick />
           </Box> */}
         </Box>
-        {isMobile ? <Imagecarousel /> : null}
+        {isMobile ? <Imagecarousel data={CsoCardData} /> : null}
       </Box>
       <Box className="footer">
         <Footer />

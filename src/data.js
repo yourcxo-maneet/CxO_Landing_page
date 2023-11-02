@@ -373,6 +373,220 @@ export const CxoCardData = [
     description: "Let us handle your marketing and finance your ads for you!",
   },
 ];
+export const CfoCardData = [
+  {
+    image: csoImage,
+    title: "CSO",
+    page: "meetyourcso",
+    description:
+      "Navigate your business journey with our insightful strategy guidance.",
+  },
+  {
+    image: cmoImage,
+    title: "CMO",
+    page: "meetyourcmo",
+    description: "Let us handle your marketing and finance your ads for you!",
+  },
+  {
+    image: ctoImage,
+    title: "CTO",
+    page: "meetyourcto",
+    description:
+      "Innovate fearlessly with our cutting-edge technological solutions.",
+  },
+  {
+    image: chroImage,
+    title: "CHRO",
+    page: "meetyourchro",
+    description:
+      "Nurture your most valuable asset, your team, with our HR expertise.",
+  },
+  {
+    image: cooImage,
+    title: "COO",
+    page: "/",
+    description: "Let us handle your project management & operations for you!",
+  },
+  {
+    image: cfoImage,
+    title: "CFO",
+    page: "meetyourcfo",
+    description:
+      "Secure your financial future with our expert fiscal management.",
+  },
+];
+export const ChroCardData = [
+  {
+    image: csoImage,
+    title: "CSO",
+    page: "meetyourcso",
+    description:
+      "Navigate your business journey with our insightful strategy guidance.",
+  },
+  {
+    image: cooImage,
+    title: "COO",
+    page: "/",
+    description: "Let us handle your project management & operations for you!",
+  },
+
+  {
+    image: cfoImage,
+    title: "CFO",
+    page: "meetyourcfo",
+    description:
+      "Secure your financial future with our expert fiscal management.",
+  },
+  {
+    image: cmoImage,
+    title: "CMO",
+    page: "meetyourcmo",
+    description: "Let us handle your marketing and finance your ads for you!",
+  },
+  {
+    image: ctoImage,
+    title: "CTO",
+    page: "meetyourcto",
+    description:
+      "Innovate fearlessly with our cutting-edge technological solutions.",
+  },
+  {
+    image: chroImage,
+    title: "CHRO",
+    page: "meetyourchro",
+    description:
+      "Nurture your most valuable asset, your team, with our HR expertise.",
+  },
+];
+export const CsoCardData = [
+  {
+    image: cmoImage,
+    title: "CMO",
+    page: "meetyourcmo",
+    description: "Let us handle your marketing and finance your ads for you!",
+  },
+  {
+    image: cfoImage,
+    title: "CFO",
+    page: "meetyourcfo",
+    description:
+      "Secure your financial future with our expert fiscal management.",
+  },
+  {
+    image: ctoImage,
+    title: "CTO",
+    page: "meetyourcto",
+    description:
+      "Innovate fearlessly with our cutting-edge technological solutions.",
+  },
+  {
+    image: chroImage,
+    title: "CHRO",
+    page: "meetyourchro",
+    description:
+      "Nurture your most valuable asset, your team, with our HR expertise.",
+  },
+  {
+    image: cooImage,
+    title: "COO",
+    page: "/",
+    description: "Let us handle your project management & operations for you!",
+  },
+  {
+    image: csoImage,
+    title: "CSO",
+    page: "meetyourcso",
+    description:
+      "Navigate your business journey with our insightful strategy guidance.",
+  },
+];
+export const CooCardData = [
+  {
+    image: csoImage,
+    title: "CSO",
+    page: "meetyourcso",
+    description:
+      "Navigate your business journey with our insightful strategy guidance.",
+  },
+  {
+    image: chroImage,
+    title: "CHRO",
+    page: "meetyourchro",
+    description:
+      "Nurture your most valuable asset, your team, with our HR expertise.",
+  },
+  {
+    image: cmoImage,
+    title: "CMO",
+    page: "meetyourcmo",
+    description: "Let us handle your marketing and finance your ads for you!",
+  },
+  {
+    image: cfoImage,
+    title: "CFO",
+    page: "meetyourcfo",
+    description:
+      "Secure your financial future with our expert fiscal management.",
+  },
+  {
+    image: ctoImage,
+    title: "CTO",
+    page: "meetyourcto",
+    description:
+      "Innovate fearlessly with our cutting-edge technological solutions.",
+  },
+
+  {
+    image: cooImage,
+    title: "COO",
+    page: "/",
+    description: "Let us handle your project management & operations for you!",
+  },
+];
+export const CtoCardData = [
+  {
+    image: cmoImage,
+    title: "CMO",
+    page: "meetyourcmo",
+    description: "Let us handle your marketing and finance your ads for you!",
+  },
+  {
+    image: csoImage,
+    title: "CSO",
+    page: "meetyourcso",
+    description:
+      "Navigate your business journey with our insightful strategy guidance.",
+  },
+
+  {
+    image: cfoImage,
+    title: "CFO",
+    page: "meetyourcfo",
+    description:
+      "Secure your financial future with our expert fiscal management.",
+  },
+  {
+    image: chroImage,
+    title: "CHRO",
+    page: "meetyourchro",
+    description:
+      "Nurture your most valuable asset, your team, with our HR expertise.",
+  },
+
+  {
+    image: cooImage,
+    title: "COO",
+    page: "/",
+    description: "Let us handle your project management & operations for you!",
+  },
+  {
+    image: ctoImage,
+    title: "CTO",
+    page: "meetyourcto",
+    description:
+      "Innovate fearlessly with our cutting-edge technological solutions.",
+  },
+];
 
 export const planCardData = [
   {

@@ -5,7 +5,7 @@ import { CxoCardData, cxoCardData } from "../../data";
 import CxoCard from "../cards/CxoCard";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-function ImageCarousel() {
+function ImageCarousel({ data }) {
   var settings = {
     className: "imagerCarousel-slider",
     dots: false,
@@ -76,7 +76,7 @@ function ImageCarousel() {
   return (
     <div>
       <Slider {...settings}>
-        {CxoCardData.map((data) => (
+        {data.map((data) => (
           <div>
             <CxoCard data={data} />
           </div>

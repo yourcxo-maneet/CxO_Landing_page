@@ -20,6 +20,7 @@ import PrimaryButton from "../../components/buttons/PrimaryButton";
 import CxoCard from "../../components/cards/CxoCard";
 import Footer from "../../components/footer/Footer";
 import {
+  CxoCardData,
   cmoPlanCardData,
   cmoSubCardData,
   cxoCardData,
@@ -266,14 +267,14 @@ const CMO = () => {
         <Box className="cxo-card">
           {isMobile ? null : (
             <Box sx={{ width: "90%", margin: "0 auto" }}>
-              <CarouselSlick />
+              <CarouselSlick data={CxoCardData} />
             </Box>
           )}
           {/* <Box sx={{ width: "90%", margin: "0 auto" }}>
             <CarouselSlick />
           </Box> */}
         </Box>
-        {isMobile ? <Imagecarousel /> : null}
+        {isMobile ? <Imagecarousel data={CxoCardData} /> : null}
       </Box>
 
       <Box className="footer">
