@@ -87,7 +87,7 @@ const COO = () => {
           columnSpacing={{ xs: 1, sm: 2, md: 3 }}
         >
           <Grid className="section1-left" item xs={12} md={6}>
-            <Box sx={{ maxWidth: "100%", paddingLeft: "1rem" }}>
+            <Box sx={{ maxWidth: "100%" }}>
               <Typography className="heading">
                 Meet <span className="special-text">Your COO</span>
               </Typography>

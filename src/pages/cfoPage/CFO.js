@@ -26,6 +26,7 @@ import CarouselSlick from "../../components/carousel-slick/CarouselSlick";
 import calendarImage from "../../assets/cfoCalendarPic.svg";
 import { useEffect, useRef, useState } from "react";
 import SubCardCarousel from "../../components/subcard-carousel/SubCardCarousel";
+import { Helmet } from "react-helmet";
 
 const CFO = () => {
   const [open, setOpen] = useState(false);
@@ -73,6 +74,14 @@ const CFO = () => {
     <>
       <NavBar />
       <Box>
+        <Helmet>
+          <title>Expert Fractional CFO Services | Your CxO Online</title>
+          <meta charset="utf-8" />
+          <meta
+            name="description"
+            content="Get financial insights and enhance decision-making with our fractional CFO services. Learn how Your CxO Online can optimize your financial strategies and operations."
+          />
+        </Helmet>
         <Grid
           className="section1"
           container
@@ -80,7 +89,7 @@ const CFO = () => {
           columnSpacing={{ xs: 1, sm: 2, md: 3 }}
         >
           <Grid className="section1-left" item xs={12} md={6}>
-            <Box sx={{ maxWidth: "100%", paddingLeft: "1rem" }}>
+            <Box sx={{ maxWidth: "100%" }}>
               <Typography className="heading">
                 Meet <span className="special-text">Your CFO</span>
               </Typography>

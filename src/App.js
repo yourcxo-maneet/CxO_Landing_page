@@ -7,10 +7,19 @@ import CHRO from "./pages/chroPage/CHRO";
 import CSO from "./pages/csoPage/CSO";
 import CTO from "./pages/ctoPage/CTO";
 import COO from "./pages/cooPage/COO";
+import { Helmet } from "react-helmet";
 
 const App = () => {
   return (
     <BrowserRouter>
+      <Helmet>
+        <title>Fractional COO Services | Your CxO Online</title>
+        <meta charset="utf-8" />
+        <meta
+          name="description"
+          content="Meta Description: Drive operational efficiency with our fractional COO services. Learn how Your CxO Online can optimize your business operations and streamline your organizational processes."
+        />
+      </Helmet>
       <Routes>
         <Route path="/" element={<COO />} />
         <Route path="/meetyourcmo" element={<CMO />} />

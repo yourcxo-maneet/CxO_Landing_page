@@ -28,6 +28,7 @@ import CarouselSlick from "../../components/carousel-slick/CarouselSlick";
 import calendarImage from "../../assets/cfoCalendarPic.svg";
 import { useEffect, useRef, useState } from "react";
 import SubCardCarousel from "../../components/subcard-carousel/SubCardCarousel";
+import { Helmet } from "react-helmet";
 
 const CHRO = () => {
   const [open, setOpen] = useState(false);
@@ -74,6 +75,14 @@ const CHRO = () => {
   };
   return (
     <>
+      <Helmet>
+        <title>Fractional CHRO Services | Your CxO Online</title>
+        <meta charset="utf-8" />
+        <meta
+          name="description"
+          content="Optimize your human resources strategies with our fractional CHRO services. Discover how Your CxO Online can enhance your HR management and foster employee development."
+        />
+      </Helmet>
       <NavBar />
       <Box>
         <Grid
@@ -83,9 +92,9 @@ const CHRO = () => {
           columnSpacing={{ xs: 1, sm: 2, md: 3 }}
         >
           <Grid className="section1-left" item xs={12} md={6}>
-            <Box sx={{ maxWidth: "100%", paddingLeft: "1rem" }}>
+            <Box sx={{ maxWidth: "100%" }}>
               <Typography className="heading">
-                Meet <span className="special-text">Your CHRO</span> Today
+                Meet <span className="special-text">Your CHRO</span>
               </Typography>
               {/* <Typography className="heading">Today</Typography> */}
               <p className="sub-text">

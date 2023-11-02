@@ -31,6 +31,7 @@ import Imagecarousel from "../../components/testCrousel/ImageCarousel";
 import CarouselSlick from "../../components/carousel-slick/CarouselSlick";
 import { useEffect, useRef, useState } from "react";
 import SubCardCarousel from "../../components/subcard-carousel/SubCardCarousel";
+import { Helmet } from "react-helmet";
 
 const CMO = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -78,6 +79,14 @@ const CMO = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Fractional CMO Services | Your CxO Online</title>
+        <meta charset="utf-8" />
+        <meta
+          name="description"
+          content="Empower your marketing strategies with our fractional CMO services. Discover how our skilled professionals can elevate your brand and drive business growth."
+        />
+      </Helmet>
       <NavBar />
       <Box>
         <Grid

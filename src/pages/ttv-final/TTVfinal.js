@@ -29,6 +29,7 @@ import Imagecarousel from "../../components/testCrousel/ImageCarousel";
 import CarouselSlick from "../../components/carousel-slick/CarouselSlick";
 import { useEffect, useRef, useState } from "react";
 import SubCardCarousel from "../../components/subcard-carousel/SubCardCarousel";
+import { Helmet } from "react-helmet";
 function TTVfinal() {
   const item = [1, 2, 3, 4, 5, 6, 7, 87];
   const [isMobile, setIsMobile] = useState(false);
@@ -74,6 +75,14 @@ function TTVfinal() {
   };
   return (
     <>
+      <Helmet>
+        <title>Get Free Ad Funding for Business Growth | Your CxO Online</title>
+        <meta charset="utf-8" />
+        <meta
+          name="description"
+          content="Apply for Your CMO's Ad Funding to fuel your business growth. Learn how Your CxO Online can help you finance your advertising campaigns and drive your brand's success."
+        />
+      </Helmet>
       <NavBar />
       <Box>
         <Grid
@@ -83,7 +92,7 @@ function TTVfinal() {
           columnSpacing={{ xs: 1, sm: 2, md: 3 }}
         >
           <Grid className="section1-left" item xs={12} md={6}>
-            <Box sx={{ maxWidth: "100%", paddingLeft: "1rem" }}>
+            <Box sx={{ maxWidth: "100%" }}>
               <Typography className="heading">
                 Are you looking for{" "}
                 <span className="special-text"> Ad Funding ?</span>{" "}

@@ -32,6 +32,7 @@ import CarouselSlick from "../../components/carousel-slick/CarouselSlick";
 import calendarImage from "../../assets/CTO-Profile.svg";
 import { useEffect, useRef, useState } from "react";
 import SubCardCarousel from "../../components/subcard-carousel/SubCardCarousel";
+import { Helmet } from "react-helmet";
 
 const CTO = () => {
   const [open, setOpen] = useState(false);
@@ -77,6 +78,14 @@ const CTO = () => {
   };
   return (
     <>
+      <Helmet>
+        <title>Fractional CTO Services | Your CxO Online</title>
+        <meta charset="utf-8" />
+        <meta
+          name="description"
+          content="Enhance your business technology with our fractional CTO services. Explore how Your CxO Online can elevate your technology strategies and drive innovation."
+        />
+      </Helmet>
       <NavBar />
       <Box>
         <Grid
@@ -86,7 +95,7 @@ const CTO = () => {
           columnSpacing={{ xs: 1, sm: 2, md: 3 }}
         >
           <Grid className="section1-left" item xs={12} md={6}>
-            <Box sx={{ maxWidth: "100%", paddingLeft: "1rem" }}>
+            <Box sx={{ maxWidth: "100%" }}>
               <Typography className="heading">
                 Meet <span className="special-text">Your CTO</span>
               </Typography>

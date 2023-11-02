@@ -30,6 +30,7 @@ import CarouselSlick from "../../components/carousel-slick/CarouselSlick";
 import calendarImage from "../../assets/cfoCalendarPic.svg";
 import { useEffect, useRef, useState } from "react";
 import SubCardCarousel from "../../components/subcard-carousel/SubCardCarousel";
+import { Helmet } from "react-helmet";
 
 const CSO = () => {
   const [open, setOpen] = useState(false);
@@ -76,6 +77,14 @@ const CSO = () => {
   };
   return (
     <>
+      <Helmet>
+        <title>Fractional CSO Services | Your CxO Online</title>
+        <meta charset="utf-8" />
+        <meta
+          name="description"
+          content="Elevate your business strategy with our fractional CSO services. Discover how Your CxO Online can enhance your strategic planning and drive business development."
+        />
+      </Helmet>
       <NavBar />
       <Box>
         <Grid
@@ -85,15 +94,15 @@ const CSO = () => {
           columnSpacing={{ xs: 1, sm: 2, md: 3 }}
         >
           <Grid className="section1-left" item xs={12} md={6}>
-            <Box sx={{ maxWidth: "100%", paddingLeft: "1rem" }}>
+            <Box sx={{ maxWidth: "100%" }}>
               <Typography className="heading">
                 Meet <span className="special-text">Your CSO</span>
               </Typography>
               {/* <Typography className="heading">Today</Typography> */}
               <p className="sub-text">
                 Empower your{" "}
-                <span className="bold-text">business strategy </span> and for
-                growth and innovation through our{" "}
+                <span className="bold-text">business strategy </span> for growth
+                and innovation through our{" "}
                 <span className="bold-text">CSO subscription services, </span>{" "}
                 your path to sustainable success.
               </p>

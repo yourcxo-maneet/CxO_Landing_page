@@ -53,11 +53,3 @@ const SolidButton = ({ content, widget, clickScroll }) => {
 };
 
 export default SolidButton;
-
-{
-  /* <iframe
-            frameborder="0"
-            style={{ height: "500px", width: "99%", border: "none" }}
-            src="https://forms.zohopublic.in/yourcxoonline/form/AdFundApplication/formperma/NA8G68NnhgfIRQZ4GHM7gf4p3d3s1BmxBB7gN4z7qqE"
-          ></iframe> */
-}

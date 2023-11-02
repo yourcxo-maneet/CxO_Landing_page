@@ -7,6 +7,16 @@ import cooImage from "./assets/newCoo.svg";
 import goOrganic from "./assets/goOrganic.svg";
 import GoScale from "./assets/GoScale.svg";
 import GoPro from "./assets/GoPro.svg";
+import Ideation from "./assets/ideation.svg";
+import Roadmap from "./assets/roadmap.svg";
+import Market from "./assets/marketReady.svg";
+import OpsGo from "./assets/opsGo.svg";
+import OpsSquad from "./assets/opsSquad.svg";
+import OpsVirtual from "./assets/virtaulAssist.svg";
+import TechGo from "./assets/Tech-GoStart.svg";
+import TechBespoke from "./assets/Tech-Bespoke.svg";
+import TechScale from "./assets/Tech-GoScale.svg";
+
 export const subCardData = [
   {
     image: goOrganic,
@@ -199,7 +209,7 @@ export const cfoSubCardData = [
 ];
 export const csoSubCardData = [
   {
-    image: goOrganic,
+    image: Ideation,
     heading: "Ideation",
     min: "2",
     price: "1400",
@@ -212,7 +222,7 @@ export const csoSubCardData = [
     ],
   },
   {
-    image: GoScale,
+    image: Roadmap,
     heading: "Roadmap",
     min: "2",
     price: "2100",
@@ -220,7 +230,7 @@ export const csoSubCardData = [
     services: ["Revenue Model", "Cash Flow Plan", "Multi Year Forecast (3/5)"],
   },
   {
-    image: GoPro,
+    image: Market,
     heading: "Market Ready",
     min: "3",
     price: "3500",
@@ -235,7 +245,7 @@ export const csoSubCardData = [
 ];
 export const cooSubCardData = [
   {
-    image: goOrganic,
+    image: OpsVirtual,
     heading: "Virtual Assist",
     min: "3",
     price: "800",
@@ -247,7 +257,7 @@ export const cooSubCardData = [
     ],
   },
   {
-    image: GoScale,
+    image: OpsGo,
     heading: "Ops Go",
     min: "2",
     price: "1900",
@@ -255,7 +265,7 @@ export const cooSubCardData = [
     services: ["Revenue Model", "Cash Flow Plan", "Multi Year Forecast (3/5)"],
   },
   {
-    image: GoPro,
+    image: OpsSquad,
     heading: "Ops Squad",
     min: "3",
     price: "3500",
@@ -272,7 +282,7 @@ export const cooSubCardData = [
 ];
 export const ctoSubCardData = [
   {
-    image: goOrganic,
+    image: TechBespoke,
     heading: "Bespoke",
     min: "2-3",
     price: "9000/12000",
@@ -288,7 +298,7 @@ export const ctoSubCardData = [
     ],
   },
   {
-    image: GoScale,
+    image: TechGo,
     heading: "Go Start",
     min: "3",
     price: "5500",
@@ -303,7 +313,7 @@ export const ctoSubCardData = [
     ],
   },
   {
-    image: GoPro,
+    image: TechScale,
     heading: "Go Scale",
     min: "2-3",
     price: "10,000",
