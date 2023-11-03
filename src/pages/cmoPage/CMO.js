@@ -95,6 +95,7 @@ const CMO = () => {
           container
           rowSpacing={1}
           columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+          alignItems="flex-start"
         >
           <Grid className="section1-left" item xs={12} md={6}>
             <Box sx={{ maxWidth: "100%" }}>
