@@ -8,8 +8,20 @@ import CSO from "./pages/csoPage/CSO";
 import CTO from "./pages/ctoPage/CTO";
 import COO from "./pages/cooPage/COO";
 import { Helmet } from "react-helmet";
+import FacebookPixel from "./utils/FaceBookPixel";
+import { useEffect } from "react";
 
 const App = () => {
+  useEffect(() => {
+    import("react-facebook-pixel")
+      .then((x) => x.default)
+      .then((ReactPixel) => {
+        ReactPixel.init("365229479176360"); // facebookPixelId
+        ReactPixel.pageView();
+
+        ReactPixel.pageView();
+      });
+  }, []);
   return (
     <BrowserRouter>
       <Helmet>
