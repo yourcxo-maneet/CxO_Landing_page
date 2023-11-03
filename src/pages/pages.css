@@ -2,7 +2,7 @@
   font-weight: 900;
 }
 .section1 {
-  padding: 2rem 6rem 8rem 6rem;
+  padding: 4rem 6rem 3.2rem 6rem;
   color: #ffffff;
   justify-content: center;
   align-items: center;
@@ -11,15 +11,16 @@
 .section1 .section1-left {
   display: flex;
   flex-direction: column;
+}
+.section1 .section1-left .section1-left-1 {
+  display: flex;
   justify-content: center;
+  gap: 20px;
 }
 .section1 .image-wrapper {
   margin-bottom: 20px;
 }
 .section1 .image-avatar {
-  position: relative;
-  top: 0%;
-  right: 13%;
 }
 .section1 .sub-text {
   padding-right: 5rem;
@@ -33,7 +34,7 @@
 .section1 .heading {
   font-family: Montserrat;
   font-style: normal;
-  font-size: 62px;
+  font-size: 53px;
   font-weight: 500;
   line-height: 68px;
   letter-spacing: 0em;
@@ -74,7 +75,7 @@
   gap: 20px;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  /* width: 90%; */
   margin: 0 auto;
 }
 .section2 .heading {
@@ -295,7 +296,6 @@
   }
   .section1 .sub-text {
     padding-right: 0px;
-    margin-top: 25px;
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 100;
@@ -305,7 +305,7 @@
   }
   .section1 .heading {
     font-family: Montserrat;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 500;
     line-height: 20px;
     letter-spacing: 0em;
@@ -315,6 +315,9 @@
     color: #eea91f;
     font-weight: 500;
     line-height: 80px;
+  }
+  .section1 .section1-left .section1-left-1 {
+    gap: 5px;
   }
 
   .section2 .heading {

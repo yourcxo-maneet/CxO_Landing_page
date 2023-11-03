@@ -41,7 +41,7 @@ const CxoCard = ({ data }) => {
         >
           {data.description}
         </Typography>
-        <Button variant="outlined" className="button" onClick={handleClick}>
+        <Button className="button" onClick={handleClick}>
           Meet Your {data.title}
         </Button>
       </Box>

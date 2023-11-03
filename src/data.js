@@ -704,7 +704,7 @@ export const chroPlanCardData = [
 export const cmoPlanCardData = [
   {
     title: "Develop a GTM Strategy",
-    price: "600- $1900",
+    price: "900",
     features: [
       "Market Research",
       "Communication Strategy",
@@ -715,7 +715,7 @@ export const cmoPlanCardData = [
   },
   {
     title: " Marketing Operations",
-    price: "2700",
+    price: "600 onwards",
     features: [
       "Email Marketing",
       "SMS or Whatsapp Marketing",
@@ -724,12 +724,12 @@ export const cmoPlanCardData = [
   },
   {
     title: "SEO Operations",
-    price: "550",
+    price: "450",
     features: ["SEO Audit", "SEO Operations"],
   },
   {
     title: "Build a Wordpress Website",
-    price: "4500",
+    price: "990",
     features: [
       "Template Library - ThemeForest",
       "Logo & Brand Book",
@@ -738,18 +738,8 @@ export const cmoPlanCardData = [
     ],
   },
   {
-    title: "Software Development",
-    price: "1000",
-    features: [
-      "Custom UI & UX",
-      "Logo & Brand Book",
-      "Website Content & Pages",
-      "Chatbot Integration",
-    ],
-  },
-  {
     title: "Build a Marketplace",
-    price: "5500",
+    price: "2900",
     features: [
       `Amazon/Flipkart/Alibaba${"  "}/Walmart Setup (Any 1)`,
       "Logo & Brand Book",
@@ -759,7 +749,7 @@ export const cmoPlanCardData = [
   },
   {
     title: "Build an E-commerce store",
-    price: "5500",
+    price: "3500",
     features: [
       "Template Library - ThemeForest",
       "Logo & Brand Book",
@@ -770,7 +760,7 @@ export const cmoPlanCardData = [
 
   {
     title: "Create a Shopify Store",
-    price: "6500",
+    price: "3500",
     features: [
       "Template Library - Shopify",
       "Logo & Brand Book",

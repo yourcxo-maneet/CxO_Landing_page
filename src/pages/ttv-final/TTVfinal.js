@@ -91,13 +91,22 @@ function TTVfinal() {
           container
           rowSpacing={1}
           columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+          alignItems="flex-start"
         >
           <Grid className="section1-left" item xs={12} md={6}>
             <Box sx={{ maxWidth: "100%" }}>
-              <Typography className="heading">
-                Are you looking for{" "}
-                <span className="special-text"> Ad Funding ?</span>{" "}
-              </Typography>
+              <Box className="section1-left-1">
+                <Box className="image-avatar">
+                  {" "}
+                  <img src={calendarImage} alt="calendarImage" />
+                </Box>
+                <Box>
+                  <Typography className="heading">
+                    Are you looking for{" "}
+                    <span className="special-text"> Ad Funding ?</span>{" "}
+                  </Typography>
+                </Box>
+              </Box>
 
               <p className="sub-text">
                 Unlock the <span className="bold-text">full potential</span> of
@@ -109,7 +118,7 @@ function TTVfinal() {
             </Box>
             <Box className="section1-buttons">
               <SolidButton
-                content={"Get Your Ads Funded"}
+                content={"Get Your CMO's Ad Funding"}
                 widget={
                   <iframe
                     frameborder="0"
@@ -122,10 +131,6 @@ function TTVfinal() {
             </Box>
           </Grid>
           <Grid className="section1-right" item xs={12} md={6}>
-            <Box className="image-avatar">
-              {" "}
-              <img src={calendarImage} alt="calendarImage" />
-            </Box>
             <Box className="image-wrapper">
               <iframe
                 width={isMobile ? "100%" : "500px"}
@@ -142,9 +147,9 @@ function TTVfinal() {
       </Box>
       <Box className="section2" ref={section2Ref}>
         <p className="heading">
-          We Deliver{" "}
-          <span className="heading-special text-bold">Cutting-Edge</span>{" "}
-          Digital Marketing Solutions Tailored To Your Needs
+          We Deliver Cutting-Edge{" "}
+          <span className="heading-special text-bold">Digital Marketing</span>{" "}
+          Solutions Tailored To Your Needs
         </p>
         {/* <Grid
           maxWidth={"80%"}
@@ -225,10 +230,44 @@ function TTVfinal() {
           <button className="subCard-button" onClick={scrollToTop}>
             Meet Your CMO Today
           </button>
-          <button className="subCard-buttonOutlined" onClick={handleClickOpen}>
-            Apply For Your CMO Ad Funding
-          </button>
+          {/* <button className="subCard-buttonOutlined" onClick={handleClickOpen}>
+            Get Your CMO's Ad Funding
+          </button> */}
         </Box>
+      </Box>
+
+      <Box className="section6">
+        <Typography className="heading">
+          Get Your Next 10 Clients for Free
+        </Typography>
+        <Typography className="sub-text">
+          Get Approved for $300-$15,000 of Advertising Budget Fast
+        </Typography>
+        <button className="subCard-button" onClick={handleClickOpen}>
+          Get Your CMO's Ad Funding
+        </button>
+        <Dialog
+          fullScreen={fullScreen}
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="responsive-dialog-title"
+        >
+          <DialogTitle id="responsive-dialog-title"></DialogTitle>
+          <DialogContent>
+            <DialogContentText>
+              <iframe
+                frameborder="0"
+                style={{ height: "760px", width: "500px", border: "none" }}
+                src="https://forms.zohopublic.in/yourcxoonline/form/AdFundApplication/formperma/NA8G68NnhgfIRQZ4GHM7gf4p3d3s1BmxBB7gN4z7qqE"
+              ></iframe>
+            </DialogContentText>
+          </DialogContent>
+          <DialogActions>
+            <Button autoFocus onClick={handleClose}>
+              Close
+            </Button>
+          </DialogActions>
+        </Dialog>
       </Box>
 
       <Box className="section3">
@@ -238,15 +277,14 @@ function TTVfinal() {
               Do you want to start small ? No worries!
             </Typography>
             <Typography className="caption">
-              Customize a plan that directly aligns with your objectives, &
-              capture markets!
+              Bespoke plans, tailored just for you!
             </Typography>
           </Box>
-          <Box className="section3-subButton">
+          {/* <Box className="section3-subButton">
             <button className="subCard-button" onClick={scrollToTop}>
               Meet Your CMO Today
             </button>
-          </Box>
+          </Box> */}
         </Box>
         {/* <Grid
           maxWidth={"80%"}
@@ -274,7 +312,7 @@ function TTVfinal() {
         </Grid> */}
         <Crousel data={cmoPlanCardData} Card={PlanCard} />
       </Box>
-      <Box className="section4">
+      {/* <Box className="section4">
         <Grid
           maxWidth={"80%"}
           container
@@ -295,7 +333,7 @@ function TTVfinal() {
               <br /> finance your ads for you!
             </Typography>
             <button className="subCard-button" onClick={handleClickOpen}>
-              Apply for Your CMO Ad Funding
+              Get Your CMO's Ad Funding
             </button>
             <Dialog
               fullScreen={fullScreen}
@@ -327,7 +365,7 @@ function TTVfinal() {
             <img src={socialMediaImg} />
           </Grid>
         </Grid>
-      </Box>
+      </Box> */}
       <Box className="section5">
         <Box sx={{ margin: "0 auto", width: "80%" }}>
           <Typography variant="h4" gutterBottom sx={{ fontWeight: "bold" }}>

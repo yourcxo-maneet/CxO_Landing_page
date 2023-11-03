@@ -98,9 +98,18 @@ const CMO = () => {
         >
           <Grid className="section1-left" item xs={12} md={6}>
             <Box sx={{ maxWidth: "100%" }}>
-              <Typography className="heading">
-                Meet <span className="special-text">Your CMO</span>
-              </Typography>
+              <Box className="section1-left-1">
+                <Box className="image-avatar">
+                  {" "}
+                  <img src={calendarImage} alt="calendarImage" />
+                </Box>
+                <Box>
+                  <Typography className="heading">
+                    Meet Your
+                    <span className="special-text">CMO</span>{" "}
+                  </Typography>
+                </Box>
+              </Box>
               {/* <Typography className="heading">Today</Typography> */}
               <p className="sub-text">
                 Unlock the <span className="bold-text">full potential</span> of
@@ -128,10 +137,6 @@ const CMO = () => {
             </Box>
           </Grid>
           <Grid className="section1-right" item xs={12} md={6}>
-            <Box className="image-avatar">
-              {" "}
-              <img src={calendarImage} alt="calendarImage" />
-            </Box>
             <Box className="image-wrapper">
               <iframe
                 width="100%"

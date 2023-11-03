@@ -167,11 +167,15 @@
   margin-right: auto;
   margin-left: auto;
   border-radius: 8.271px;
+  border: 0px;
   background: var(--Primary, #eea91f);
   box-shadow: 1.96168px 18.63597px 30.40606px 0px rgba(0, 0, 0, 0.07),
     -1.47126px -1.96168px 3.43294px 0px rgba(255, 255, 255, 0.15) inset;
   color: #050505;
   padding: 10px 20px;
+}
+.cxoCard-wrapper .cxoCard-content button {
+  border: 0px;
 }
 
 @media (max-width: 768px) {
