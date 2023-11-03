@@ -392,7 +392,7 @@ function TTVfinal() {
       </Box>
 
       <Box className="footer">
-        <Footer />
+        <Footer isTtv={true} />
       </Box>
       {/* <Box sx={{ width: "90%", margin: "0 auto", background: "#fefefe" }}>
         <CarouselSlick />

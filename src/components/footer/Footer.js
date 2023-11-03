@@ -12,7 +12,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import EmailIcon from "@mui/icons-material/Email";
 import "./footer.css";
 
-const Footer = () => {
+const Footer = ({ isTtv }) => {
   const handleEmailClick = () => {
     window.location.href = "mailto:helpdesk@yourcxo.online";
   };
@@ -26,14 +26,25 @@ const Footer = () => {
           <Box sx={{ marginBottom: "1rem" }}>
             <img src={logo} width={"250px"} height={"107px"} />
           </Box>
-          <Box className="footer-upper-left-details" onClick={handlePhoneClick}>
-            <HeadsetIcon />
-            <Typography>+1 (437) 799-9039</Typography>
-          </Box>
-          <Box className="footer-upper-left-details" onClick={handleEmailClick}>
-            <EmailIcon />
-            <Typography>helpdesk@yourcxo.online</Typography>
-          </Box>
+          {isTtv ? null : (
+            <Box
+              className="footer-upper-left-details"
+              onClick={handlePhoneClick}
+            >
+              <HeadsetIcon />
+              <Typography>+1 (437) 799-9039</Typography>
+            </Box>
+          )}
+          {isTtv ? null : (
+            <Box
+              className="footer-upper-left-details"
+              onClick={handleEmailClick}
+            >
+              <EmailIcon />
+              <Typography>helpdesk@yourcxo.online</Typography>
+            </Box>
+          )}
+
           <Box className="footer-upper-left-details">
             <LocationOnIcon />
             <Typography>
