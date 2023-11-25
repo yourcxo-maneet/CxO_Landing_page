@@ -12,7 +12,18 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import EmailIcon from "@mui/icons-material/Email";
 import "./footer.css";
 
+import { useNavigate } from "react-router-dom";
+
 const Footer = ({ isTtv }) => {
+  const navigate = useNavigate();
+  const handleClickPrivacy = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    navigate(`../privacy-policies`);
+  };
+  const handleClickCookies = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    navigate(`../cookies-policies`);
+  };
   const handleEmailClick = () => {
     window.location.href = "mailto:helpdesk@yourcxo.online";
   };
@@ -100,10 +111,36 @@ const Footer = ({ isTtv }) => {
       </Box>
       <Box></Box>
       <hr></hr>
-      <Typography>
-        © 2023 Your CxO Online Solutions Inc. All Rights Reserved.
-      </Typography>
-      <Box></Box>
+      <Box
+        sx={{ display: "flex", justifyContent: "space-between", width: "100%" }}
+      >
+        <Typography>
+          © 2023 Your CxO Online Solutions Inc. All Rights Reserved.{" "}
+        </Typography>
+        <Box>
+          <span
+            onClick={handleClickPrivacy}
+            style={{
+              padding: "0px 5px",
+              textDecoration: "underline",
+              cursor: "pointer",
+            }}
+          >
+            Privacy Policy
+          </span>
+
+          <span
+            onClick={handleClickCookies}
+            style={{
+              padding: "0px 5px",
+              textDecoration: "underline",
+              cursor: "pointer",
+            }}
+          >
+            Cookies Policy
+          </span>
+        </Box>
+      </Box>
     </Box>
   );
 };

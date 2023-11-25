@@ -10,6 +10,8 @@ import COO from "./pages/cooPage/COO";
 import { Helmet } from "react-helmet";
 import FacebookPixel from "./utils/FaceBookPixel";
 import { useEffect } from "react";
+import PrivacyPolicy from "./pages/policies/PrivacyPolicy";
+import CookiePolicy from "./pages/policies/CookiePolicy";
 
 const App = () => {
   useEffect(() => {
@@ -41,6 +43,8 @@ const App = () => {
         <Route path="/meetyourcso" element={<CSO />} />
         <Route path="/meetyourcto" element={<CTO />} />
         <Route path="/getAdfunded" element={<TTVfinal />} />
+        <Route path="/privacy-policies" element={<PrivacyPolicy />} />
+        <Route path="/cookies-policies" element={<CookiePolicy />} />
       </Routes>
     </BrowserRouter>
   );
